@@ -17,7 +17,7 @@ date: "`r Sys.Date()`"
 pacman::p_load(knitr)
 ```
 
-# THEME: POINT PATTERN ANALYSIS
+# THEME: SPATIAL POINT PATTERN ANALYSIS
 
 # 1 Background
 
