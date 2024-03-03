@@ -1,16 +1,86 @@
 [
   {
+    "objectID": "proposal/project_proposal.html#title-towards-a-spatial-theory-of-worship-some-observations-from-presbyterian-scotland",
+    "href": "proposal/project_proposal.html#title-towards-a-spatial-theory-of-worship-some-observations-from-presbyterian-scotland",
+    "title": "Project Proposal: Places of Worship",
+    "section": "Title: Towards a spatial theory of worship, Some observations from Presbyterian Scotland",
+    "text": "Title: Towards a spatial theory of worship, Some observations from Presbyterian Scotland\nSource: https://doi-org.libproxy.smu.edu.sg/10.1080/14649360120114143\nSummary: The argue that ‘worship’, a term which has no universal application in religious studies, has been thinly conceived in geographical literature and must be examined both as process and as practice. Worship is here considered as the dynamic and varied human response to the theological proposition of Divinity. Specifically, the paper explores the dialectic between the theology of the Reformation and the practice of formal worship, a relation that is given a spatial expression in the Sabbath service."
+  },
+  {
+    "objectID": "proposal/project_proposal.html#title-religion-gnaws-urban-planning-the-geography-of-places-of-worship-in-kumasi-ghana",
+    "href": "proposal/project_proposal.html#title-religion-gnaws-urban-planning-the-geography-of-places-of-worship-in-kumasi-ghana",
+    "title": "Project Proposal: Places of Worship",
+    "section": "Title: Religion gnaws urban planning: the geography of places of worship in Kumasi, Ghana",
+    "text": "Title: Religion gnaws urban planning: the geography of places of worship in Kumasi, Ghana\nSource: https://www.tandfonline.com/doi/full/10.1080/19463138.2015.1074581\nSummary: investigates spatial distribution of places of worship (PoW) and its implications on sustainable land use planning in a rapidly urbanising city of Kumasi, Ghana. Using semi-structured interviews, document reviews and agency consultations, this paper focused on three issues: (a) the location and distribution of PoW, (b) factors considered in the location of these PoW by faith groups and (c) planning implications of PoW."
+  },
+  {
+    "objectID": "proposal/project_proposal.html#title-spatial-analysis-with-r-statistics-visualization-and-computational-methods",
+    "href": "proposal/project_proposal.html#title-spatial-analysis-with-r-statistics-visualization-and-computational-methods",
+    "title": "Project Proposal: Places of Worship",
+    "section": "Title: Spatial Analysis with R: Statistics, Visualization, and Computational Methods",
+    "text": "Title: Spatial Analysis with R: Statistics, Visualization, and Computational Methods\nSource: https://books.google.com.sg/books?hl=en&lr=&id=ng75DwAAQBAJ&oi=fnd&pg=PP1&dq =spatial+point+patterns+of+places+of+worshi+analytics&ots= iTMGhgvdJw&sig=v9jEiUcWEQD64Uj8iG7mpiemNIQ&redir_esc=y#v=onepage&q=spatial %20point%20patterns%20of%20places%20of%20worship%20analytics&f=false\nSummary: The use and growth of AI, ML and deep learning algorithms with a spatial perspective, and the interdisciplinary use of spatial analysis are all covered in this book. It covers traditional statistical method and algorithms to provide a concept-based problem solving learning approach to mastering practical spatial analytics."
+  },
+  {
+    "objectID": "proposal/project_proposal.html#lit-review-learning-points",
+    "href": "proposal/project_proposal.html#lit-review-learning-points",
+    "title": "Project Proposal: Places of Worship",
+    "section": "Lit-Review Learning points:",
+    "text": "Lit-Review Learning points:\nApart from the articles we have read above, we understand that the concept of geospatial is barely used in conjunction to places of worship. However, it is essential for the current age of society to understand the impact of worship. The analytical understanding is minimal and therefore we aim to provide more understanding over the religious places in both countries."
+  },
+  {
+    "objectID": "proposal/project_proposal.html#data-preparation",
+    "href": "proposal/project_proposal.html#data-preparation",
+    "title": "Project Proposal: Places of Worship",
+    "section": "7.1 Data Preparation",
+    "text": "7.1 Data Preparation\n\nData source from online platforms\nImporting spatial data into the R environment\nData wrangling"
+  },
+  {
+    "objectID": "proposal/project_proposal.html#exploratory-data-analysis",
+    "href": "proposal/project_proposal.html#exploratory-data-analysis",
+    "title": "Project Proposal: Places of Worship",
+    "section": "7.2 Exploratory Data Analysis",
+    "text": "7.2 Exploratory Data Analysis\n\nPlotting up graphs for visualization and better understanding of the data\nExamine the distribution of spatial points"
+  },
+  {
+    "objectID": "proposal/project_proposal.html#spatial-point-patterns-analysis",
+    "href": "proposal/project_proposal.html#spatial-point-patterns-analysis",
+    "title": "Project Proposal: Places of Worship",
+    "section": "7.3 Spatial Point Patterns Analysis",
+    "text": "7.3 Spatial Point Patterns Analysis\n\nFirst-Order Analysis\n\nKernel Density Estimation Mapping - Observe the intensity or the density of points\nNearest Neighbor Analysis - Examine the distribution patterns\n\nNetwork Constrained Spatial Point Patterns Analysis\n\nUsing G and K function Analysis - Observe the degree of clustering or dispersion of the spatial points"
+  },
+  {
+    "objectID": "proposal/project_proposal.html#about-page",
+    "href": "proposal/project_proposal.html#about-page",
+    "title": "Project Proposal: Places of Worship",
+    "section": "8.1 About Page",
+    "text": "8.1 About Page"
+  },
+  {
+    "objectID": "proposal/project_proposal.html#eda-page",
+    "href": "proposal/project_proposal.html#eda-page",
+    "title": "Project Proposal: Places of Worship",
+    "section": "8.2 EDA Page",
+    "text": "8.2 EDA Page"
+  },
+  {
+    "objectID": "proposal/project_proposal.html#kde-page",
+    "href": "proposal/project_proposal.html#kde-page",
+    "title": "Project Proposal: Places of Worship",
+    "section": "8.3 KDE Page",
+    "text": "8.3 KDE Page"
+  },
+  {
+    "objectID": "proposal/project_proposal.html#netkde-page",
+    "href": "proposal/project_proposal.html#netkde-page",
+    "title": "Project Proposal: Places of Worship",
+    "section": "8.4 NetKDE Page",
+    "text": "8.4 NetKDE Page"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "IS415-GAA-Project",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "THEME: POINT PATTERN ANALYSIS\nGROUP MEMBERS: ALOYSIUS CEDRIC TAY, EBENEZER HO, JORDAN LEW"
   }
 ]

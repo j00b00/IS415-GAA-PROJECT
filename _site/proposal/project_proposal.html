@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2024-03-03">
+
+<title>IS415-GAA-Project - Project Proposal: Places of Worship</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">IS415-GAA-Project</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../proposal/project_proposal.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Proposal</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#theme-point-pattern-analysis" id="toc-theme-point-pattern-analysis" class="nav-link active" data-scroll-target="#theme-point-pattern-analysis">THEME: POINT PATTERN ANALYSIS</a></li>
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">1 Background</a></li>
+  <li><a href="#problem-motivation" id="toc-problem-motivation" class="nav-link" data-scroll-target="#problem-motivation">2 Problem &amp; Motivation</a></li>
+  <li><a href="#project-objectives" id="toc-project-objectives" class="nav-link" data-scroll-target="#project-objectives">3 Project Objectives</a></li>
+  <li><a href="#data-sets-and-descriptions" id="toc-data-sets-and-descriptions" class="nav-link" data-scroll-target="#data-sets-and-descriptions">4 Data Sets and Descriptions</a></li>
+  <li><a href="#data-preparation-and-diagram-flow" id="toc-data-preparation-and-diagram-flow" class="nav-link" data-scroll-target="#data-preparation-and-diagram-flow">5 Data Preparation and Diagram flow</a></li>
+  <li><a href="#literature-review" id="toc-literature-review" class="nav-link" data-scroll-target="#literature-review">6 Literature Review</a>
+  <ul class="collapse">
+  <li><a href="#title-towards-a-spatial-theory-of-worship-some-observations-from-presbyterian-scotland" id="toc-title-towards-a-spatial-theory-of-worship-some-observations-from-presbyterian-scotland" class="nav-link" data-scroll-target="#title-towards-a-spatial-theory-of-worship-some-observations-from-presbyterian-scotland"><strong>Title: Towards a spatial theory of worship, Some observations from Presbyterian Scotland</strong></a></li>
+  <li><a href="#title-religion-gnaws-urban-planning-the-geography-of-places-of-worship-in-kumasi-ghana" id="toc-title-religion-gnaws-urban-planning-the-geography-of-places-of-worship-in-kumasi-ghana" class="nav-link" data-scroll-target="#title-religion-gnaws-urban-planning-the-geography-of-places-of-worship-in-kumasi-ghana"><strong>Title: Religion gnaws urban planning: the geography of places of worship in Kumasi, Ghana</strong></a></li>
+  <li><a href="#title-spatial-analysis-with-r-statistics-visualization-and-computational-methods" id="toc-title-spatial-analysis-with-r-statistics-visualization-and-computational-methods" class="nav-link" data-scroll-target="#title-spatial-analysis-with-r-statistics-visualization-and-computational-methods"><strong>Title: Spatial Analysis with R: Statistics, Visualization, and Computational Methods</strong></a></li>
+  <li><a href="#lit-review-learning-points" id="toc-lit-review-learning-points" class="nav-link" data-scroll-target="#lit-review-learning-points"><strong>Lit-Review Learning points:</strong></a></li>
+  </ul></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">7 Methodology</a>
+  <ul class="collapse">
+  <li><a href="#data-preparation" id="toc-data-preparation" class="nav-link" data-scroll-target="#data-preparation">7.1 Data Preparation</a></li>
+  <li><a href="#exploratory-data-analysis" id="toc-exploratory-data-analysis" class="nav-link" data-scroll-target="#exploratory-data-analysis">7.2 Exploratory Data Analysis</a></li>
+  <li><a href="#spatial-point-patterns-analysis" id="toc-spatial-point-patterns-analysis" class="nav-link" data-scroll-target="#spatial-point-patterns-analysis">7.3 Spatial Point Patterns Analysis</a></li>
+  </ul></li>
+  <li><a href="#storyboard" id="toc-storyboard" class="nav-link" data-scroll-target="#storyboard">8 Storyboard</a>
+  <ul class="collapse">
+  <li><a href="#about-page" id="toc-about-page" class="nav-link" data-scroll-target="#about-page">8.1 About Page</a></li>
+  <li><a href="#eda-page" id="toc-eda-page" class="nav-link" data-scroll-target="#eda-page">8.2 EDA Page</a></li>
+  <li><a href="#kde-page" id="toc-kde-page" class="nav-link" data-scroll-target="#kde-page">8.3 KDE Page</a></li>
+  <li><a href="#netkde-page" id="toc-netkde-page" class="nav-link" data-scroll-target="#netkde-page">8.4 NetKDE Page</a></li>
+  </ul></li>
+  <li><a href="#application-architecture" id="toc-application-architecture" class="nav-link" data-scroll-target="#application-architecture">9 Application architecture</a></li>
+  <li><a href="#project-timeline" id="toc-project-timeline" class="nav-link" data-scroll-target="#project-timeline">10 Project timeline</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Project Proposal: Places of Worship</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 3, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="theme-point-pattern-analysis" class="level1">
+<h1>THEME: POINT PATTERN ANALYSIS</h1>
+</section>
+<section id="background" class="level1">
+<h1>1 Background</h1>
+<p>The United States stands as a mosaic of diverse cultures, traditions, and belief systems. Within the country, we can find a multitude of worship places that serve as focal points for spiritual nourishment, community cohesion, and cultural expression. This project will focus on the locations of worship places across the country and unravel the spatial dimensions of religious diversity and explore the profound connections between geography and faith.</p>
+</section>
+<section id="problem-motivation" class="level1">
+<h1>2 Problem &amp; Motivation</h1>
+<p>This project holds immense significance in promoting intercultural dialogue, fostering religious tolerance, and contributing to a broader understanding of the United States’ multicultural identity. By studying the geographical positions of the worship places, we aim to provide valuable insights for policymakers, urban planners, researchers, and the public, facilitating informed decision-making and enhancing appreciation for the diverse religious mosaic that defines the American experience.</p>
+</section>
+<section id="project-objectives" class="level1">
+<h1>3 Project Objectives</h1>
+<p>• Comprehensive Mapping: Create a comprehensive map detailing the geographic distribution of worship places, categorizing them by religious affiliation. This can be done in a form of drop boxes and slider bars</p>
+<p>• Spatial Analysis: Conduct spatial analysis to identify clustering, density, and patterns of religious diversity, shedding light on the coexistence of various faith communities.</p>
+<p>• Historical Context: Integrate historical data to understand the evolution of worship places, considering factors such as migration, urbanization, and cultural shifts.</p>
+<p>• Accessibility Assessment: Investigate the accessibility of worship places to understand how geographic factors may influence the ability of communities to engage in religious practices.</p>
+</section>
+<section id="data-sets-and-descriptions" class="level1">
+<h1>4 Data Sets and Descriptions</h1>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 1%">
+<col style="width: 40%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Data</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description…Remarks</th>
+<th style="text-align: left;">Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Singapore, Places of Worship</td>
+<td style="text-align: left;">.kml</td>
+<td style="text-align: left;">The file contains multiple layers which the author has created on google maps. Extra caution should be taken when manipulating data</td>
+<td style="text-align: left;">https://www.google.com/maps/d/u/0/viewer?mid=1_KzKsVTCJ5mv0mZ55T0gE9gxX5EjzE9h&amp;ll=1.3587380243374025%2C103.82081337966211&amp;z=12</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Washington DC, Places of Worship</td>
+<td style="text-align: left;">.csv</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">https://opendata.dc.gov/datasets/b134de8f8eaa49499715a38ba97673c8_5/explore</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Description/Master Plan 2019 Subzone Boundary (No Sea), Singapore</td>
+<td style="text-align: left;">.shp</td>
+<td style="text-align: left;">We’ll use the dataset provided in Take-home Exercise 1</td>
+<td style="text-align: left;">https://beta.data.gov.sg/collections/1749/view</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Comprehensive planning areas, Washington DC</td>
+<td style="text-align: left;">.shp</td>
+<td style="text-align: left;">Multiple file types are available in the source. We have the option to access the data in various forms.</td>
+<td style="text-align: left;">https://opendata.dc.gov/datasets/203c2342b36240949e0ad95d75a5bdca_2/explore</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="data-preparation-and-diagram-flow" class="level1">
+<h1>5 Data Preparation and Diagram flow</h1>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/data_preparation_and_diagram_flow.png" class="img-fluid" width="568"></p>
+</div>
+</div>
+</section>
+<section id="literature-review" class="level1">
+<h1>6 Literature Review</h1>
+<section id="title-towards-a-spatial-theory-of-worship-some-observations-from-presbyterian-scotland" class="level2">
+<h2 class="anchored" data-anchor-id="title-towards-a-spatial-theory-of-worship-some-observations-from-presbyterian-scotland"><strong>Title: Towards a spatial theory of worship, Some observations from Presbyterian Scotland</strong></h2>
+<p><strong>Source:</strong> <a href="https://doi-org.libproxy.smu.edu.sg/10.1080/14649360120114143" class="uri">https://doi-org.libproxy.smu.edu.sg/10.1080/14649360120114143</a></p>
+<p><strong>Summary:</strong> The argue that ‘worship’, a term which has no universal application in religious studies, has been thinly conceived in geographical literature and must be examined both as process and as practice. Worship is here considered as the dynamic and varied human response to the theological proposition of Divinity. Specifically, the paper explores the dialectic between the theology of the Reformation and the practice of formal worship, a relation that is given a spatial expression in the Sabbath service.</p>
+</section>
+<section id="title-religion-gnaws-urban-planning-the-geography-of-places-of-worship-in-kumasi-ghana" class="level2">
+<h2 class="anchored" data-anchor-id="title-religion-gnaws-urban-planning-the-geography-of-places-of-worship-in-kumasi-ghana"><strong>Title: Religion gnaws urban planning: the geography of places of worship in Kumasi, Ghana</strong></h2>
+<p><strong>Source</strong>: <a href="https://www.tandfonline.com/doi/full/10.1080/19463138.2015.1074581" class="uri">https://www.tandfonline.com/doi/full/10.1080/19463138.2015.1074581</a></p>
+<p><strong>Summary</strong>: investigates spatial distribution of places of worship (PoW) and its implications on sustainable land use planning in a rapidly urbanising city of Kumasi, Ghana. Using semi-structured interviews, document reviews and agency consultations, this paper focused on three issues: (a) the location and distribution of PoW, (b) factors considered in the location of these PoW by faith groups and (c) planning implications of PoW.</p>
+</section>
+<section id="title-spatial-analysis-with-r-statistics-visualization-and-computational-methods" class="level2">
+<h2 class="anchored" data-anchor-id="title-spatial-analysis-with-r-statistics-visualization-and-computational-methods"><strong>Title: Spatial Analysis with R: Statistics, Visualization, and Computational Methods</strong></h2>
+<p><strong>Source:</strong> <a href="https://books.google.com.sg/books?hl=en&amp;lr=&amp;id=ng75DwAAQBAJ&amp;oi=fnd&amp;pg=PP1&amp;dq%20=spatial+point+patterns+of+places+of+worshi+analytics&amp;ots=%20iTMGhgvdJw&amp;sig=v9jEiUcWEQD64Uj8iG7mpiemNIQ&amp;redir_esc=y#v=onepage&amp;q=spatial%20%20point%20patterns%20of%20places%20of%20worship%20analytics&amp;f=false">https://books.google.com.sg/books?hl=en&amp;lr=&amp;id=ng75DwAAQBAJ&amp;oi=fnd&amp;pg=PP1&amp;dq =spatial+point+patterns+of+places+of+worshi+analytics&amp;ots= iTMGhgvdJw&amp;sig=v9jEiUcWEQD64Uj8iG7mpiemNIQ&amp;redir_esc=y#v=onepage&amp;q=spatial %20point%20patterns%20of%20places%20of%20worship%20analytics&amp;f=false</a></p>
+<p><strong>Summary:</strong> The use and growth of AI, ML and deep learning algorithms with a spatial perspective, and the interdisciplinary use of spatial analysis are all covered in this book. It covers traditional statistical method and algorithms to provide a concept-based problem solving learning approach to mastering practical spatial analytics.</p>
+</section>
+<section id="lit-review-learning-points" class="level2">
+<h2 class="anchored" data-anchor-id="lit-review-learning-points"><strong>Lit-Review Learning points:</strong></h2>
+<p>Apart from the articles we have read above, we understand that the concept of geospatial is barely used in conjunction to places of worship. However, it is essential for the current age of society to understand the impact of worship. The analytical understanding is minimal and therefore we aim to provide more understanding over the religious places in both countries.</p>
+</section>
+</section>
+<section id="methodology" class="level1">
+<h1>7 Methodology</h1>
+<section id="data-preparation" class="level2">
+<h2 class="anchored" data-anchor-id="data-preparation">7.1 Data Preparation</h2>
+<ul>
+<li><p>Data source from online platforms</p></li>
+<li><p>Importing spatial data into the R environment</p></li>
+<li><p>Data wrangling</p></li>
+</ul>
+</section>
+<section id="exploratory-data-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="exploratory-data-analysis">7.2 Exploratory Data Analysis</h2>
+<ul>
+<li><p>Plotting up graphs for visualization and better understanding of the data</p></li>
+<li><p>Examine the distribution of spatial points</p></li>
+</ul>
+</section>
+<section id="spatial-point-patterns-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="spatial-point-patterns-analysis">7.3 Spatial Point Patterns Analysis</h2>
+<ul>
+<li><p>First-Order Analysis</p>
+<ul>
+<li>Kernel Density Estimation Mapping - Observe the intensity or the density of points</li>
+<li>Nearest Neighbor Analysis - Examine the distribution patterns</li>
+</ul></li>
+<li><p>Network Constrained Spatial Point Patterns Analysis</p>
+<ul>
+<li>Using G and K function Analysis - Observe the degree of clustering or dispersion of the spatial points</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="storyboard" class="level1">
+<h1>8 Storyboard</h1>
+<section id="about-page" class="level2">
+<h2 class="anchored" data-anchor-id="about-page">8.1 About Page</h2>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/about_page.jpg" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="eda-page" class="level2">
+<h2 class="anchored" data-anchor-id="eda-page">8.2 EDA Page</h2>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/eda_page.jpg" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="kde-page" class="level2">
+<h2 class="anchored" data-anchor-id="kde-page">8.3 KDE Page</h2>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/kde_page.jpg" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="netkde-page" class="level2">
+<h2 class="anchored" data-anchor-id="netkde-page">8.4 NetKDE Page</h2>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/netkde_page.jpg" class="img-fluid"></p>
+</div>
+</div>
+</section>
+</section>
+<section id="application-architecture" class="level1">
+<h1>9 Application architecture</h1>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/application_architecture.jpg" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="project-timeline" class="level1">
+<h1>10 Project timeline</h1>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/project_timeline.jpg" class="img-fluid"></p>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
