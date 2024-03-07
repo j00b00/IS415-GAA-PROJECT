@@ -1,52 +1,59 @@
 [
   {
-    "objectID": "proposal/project_proposal.html#title-towards-a-spatial-theory-of-worship-some-observations-from-presbyterian-scotland",
-    "href": "proposal/project_proposal.html#title-towards-a-spatial-theory-of-worship-some-observations-from-presbyterian-scotland",
+    "objectID": "proposal/project_proposal.html#title-delineating-social-area-analysis-using-geographic-segmentation-approach",
+    "href": "proposal/project_proposal.html#title-delineating-social-area-analysis-using-geographic-segmentation-approach",
     "title": "Project Proposal: Places of Worship",
-    "section": "Title: Towards a spatial theory of worship, Some observations from Presbyterian Scotland",
-    "text": "Title: Towards a spatial theory of worship, Some observations from Presbyterian Scotland\nSource: https://doi-org.libproxy.smu.edu.sg/10.1080/14649360120114143\nSummary: The argue that ‘worship’, a term which has no universal application in religious studies, has been thinly conceived in geographical literature and must be examined both as process and as practice. Worship is here considered as the dynamic and varied human response to the theological proposition of Divinity. Specifically, the paper explores the dialectic between the theology of the Reformation and the practice of formal worship, a relation that is given a spatial expression in the Sabbath service."
+    "section": "Title: Delineating Social Area Analysis using Geographic Segmentation Approach",
+    "text": "Title: Delineating Social Area Analysis using Geographic Segmentation Approach\nSource: https://rpubs.com/YuMengTing/618944\nSummary: Social area analysis (SAA), which is a generic name for a number of methods employing census and other data to classify small areas into similar socioeconomic groups, is an approach which quantifies data in a useful fashion and has important applications in regional development, urban planning, medical and health services research. The potentialities of the approach for Liveable City planning and Smart City preparedness, however, have yet to be explored.\n\n\n\n\n\nLearning points: The initial stages of data preparation have to be done very meticulously as we want to avoid misrepresentation. For skater analysis, when plotting spatially constrained clusters (Figure 1), it will be better to accompany it with a choropleth map to aid visualization of clusters."
   },
   {
-    "objectID": "proposal/project_proposal.html#title-religion-gnaws-urban-planning-the-geography-of-places-of-worship-in-kumasi-ghana",
-    "href": "proposal/project_proposal.html#title-religion-gnaws-urban-planning-the-geography-of-places-of-worship-in-kumasi-ghana",
+    "objectID": "proposal/project_proposal.html#title-an-r-package-for-hierarchical-clustering-with-spatial-constraints",
+    "href": "proposal/project_proposal.html#title-an-r-package-for-hierarchical-clustering-with-spatial-constraints",
     "title": "Project Proposal: Places of Worship",
-    "section": "Title: Religion gnaws urban planning: the geography of places of worship in Kumasi, Ghana",
-    "text": "Title: Religion gnaws urban planning: the geography of places of worship in Kumasi, Ghana\nSource: https://www.tandfonline.com/doi/full/10.1080/19463138.2015.1074581\nSummary: investigates spatial distribution of places of worship (PoW) and its implications on sustainable land use planning in a rapidly urbanising city of Kumasi, Ghana. Using semi-structured interviews, document reviews and agency consultations, this paper focused on three issues: (a) the location and distribution of PoW, (b) factors considered in the location of these PoW by faith groups and (c) planning implications of PoW."
+    "section": "Title: An R package for hierarchical clustering with spatial constraints",
+    "text": "Title: An R package for hierarchical clustering with spatial constraints\nSource: https://arxiv.org/pdf/1707.03897.pdf\nSummary: In this paper, the authors propose a ward-like hierarchical clustering algorithm including spatial constraints. The dissimilarities can be non-euclidean and the weights of the observations can be non uniform.\nLearning points: When trying to carry out Hierarchical clustering, we need to have a dissimilarity matrix D of class dist. It is important for us to alter or transform our matrix to an appropriate data type for the function to work properly. The highlight of the paper is the calculation and algorithms used to do clustering."
   },
   {
-    "objectID": "proposal/project_proposal.html#title-spatial-analysis-with-r-statistics-visualization-and-computational-methods",
-    "href": "proposal/project_proposal.html#title-spatial-analysis-with-r-statistics-visualization-and-computational-methods",
+    "objectID": "proposal/project_proposal.html#title-cluster-analysis-and-segmentation",
+    "href": "proposal/project_proposal.html#title-cluster-analysis-and-segmentation",
     "title": "Project Proposal: Places of Worship",
-    "section": "Title: Spatial Analysis with R: Statistics, Visualization, and Computational Methods",
-    "text": "Title: Spatial Analysis with R: Statistics, Visualization, and Computational Methods\nSource: https://books.google.com.sg/books?hl=en&lr=&id=ng75DwAAQBAJ&oi=fnd&pg=PP1&dq =spatial+point+patterns+of+places+of+worshi+analytics&ots= iTMGhgvdJw&sig=v9jEiUcWEQD64Uj8iG7mpiemNIQ&redir_esc=y#v=onepage&q=spatial %20point%20patterns%20of%20places%20of%20worship%20analytics&f=false\nSummary: The use and growth of AI, ML and deep learning algorithms with a spatial perspective, and the interdisciplinary use of spatial analysis are all covered in this book. It covers traditional statistical method and algorithms to provide a concept-based problem solving learning approach to mastering practical spatial analytics."
-  },
-  {
-    "objectID": "proposal/project_proposal.html#lit-review-learning-points",
-    "href": "proposal/project_proposal.html#lit-review-learning-points",
-    "title": "Project Proposal: Places of Worship",
-    "section": "Lit-Review Learning points:",
-    "text": "Lit-Review Learning points:\nApart from the articles we have read above, we understand that the concept of geospatial is barely used in conjunction to places of worship. However, it is essential for the current age of society to understand the impact of worship. The analytical understanding is minimal and therefore we aim to provide more understanding over the religious places in both countries."
+    "section": "Title: Cluster Analysis and Segmentation",
+    "text": "Title: Cluster Analysis and Segmentation\nSource: https://inseaddataanalytics.github.io/INSEADAnalytics/\nCourseSessions/Sessions45/ClusterAnalysisReading.html#step_8:_robustness_analysis\nSummary: In Data Analytics we often have very large data (many observations - “rows in a flat file”), which are however similar to each other hence we may want to organize them in a few clusters with similar observations within each cluster. For example, in the case of customer data, even though we may have data from millions of customers, these customers may only belong to a few segments: customers are similar within each segment but different across segments. We may often want to analyze each segment separately, as they may behave differently.\nLearning points: Much like any data analysis, segmentation is an iterative process with many variations of data, methods, number of clusters, and profiles generated until a satisfying solution is reached. The paper discusses examples on how to test the statistical robustness and stability of interpretation of clusters found using 2 different approaches."
   },
   {
     "objectID": "proposal/project_proposal.html#data-preparation",
     "href": "proposal/project_proposal.html#data-preparation",
     "title": "Project Proposal: Places of Worship",
     "section": "7.1 Data Preparation",
-    "text": "7.1 Data Preparation\n\nData source from online platforms\nImporting spatial data into the R environment\nData wrangling"
+    "text": "7.1 Data Preparation\n\nData sources from online platforms\nImporting spatial data into the R environment\nData wrangling"
   },
   {
     "objectID": "proposal/project_proposal.html#exploratory-data-analysis",
     "href": "proposal/project_proposal.html#exploratory-data-analysis",
     "title": "Project Proposal: Places of Worship",
     "section": "7.2 Exploratory Data Analysis",
-    "text": "7.2 Exploratory Data Analysis\n\nPlotting up graphs for visualization and better understanding of the data\nExamine the distribution of spatial points"
+    "text": "7.2 Exploratory Data Analysis\n\nPlotting up graphs for visualization and better understanding of the data\n\nHistogram - identify the overall distribution of data value\nBox-plot - detect outliers\nChoropleth Map - Visualize the distribution on a province-level"
   },
   {
-    "objectID": "proposal/project_proposal.html#spatial-point-patterns-analysis",
-    "href": "proposal/project_proposal.html#spatial-point-patterns-analysis",
+    "objectID": "proposal/project_proposal.html#hierarchy-cluster-analysis",
+    "href": "proposal/project_proposal.html#hierarchy-cluster-analysis",
     "title": "Project Proposal: Places of Worship",
-    "section": "7.3 Spatial Point Patterns Analysis",
-    "text": "7.3 Spatial Point Patterns Analysis\n\nFirst-Order Analysis\n\nKernel Density Estimation Mapping - Observe the intensity or the density of points\nNearest Neighbor Analysis - Examine the distribution patterns\n\nNetwork Constrained Spatial Point Patterns Analysis\n\nUsing G and K function Analysis - Observe the degree of clustering or dispersion of the spatial points"
+    "section": "7.3 Hierarchy Cluster Analysis",
+    "text": "7.3 Hierarchy Cluster Analysis\n\nData Standardization (if necessary)\nGenerate Cluster Dendrogram\nGap Statistic Method\nGenerate cluster heatmap"
+  },
+  {
+    "objectID": "proposal/project_proposal.html#spatially-constrained-clustering-skater-approach",
+    "href": "proposal/project_proposal.html#spatially-constrained-clustering-skater-approach",
+    "title": "Project Proposal: Places of Worship",
+    "section": "7.4 Spatially Constrained Clustering: SKATER approach",
+    "text": "7.4 Spatially Constrained Clustering: SKATER approach\n\nGetting the Neighbor List\nCompute minimum spanning tree\nGenerate neighbors map"
+  },
+  {
+    "objectID": "proposal/project_proposal.html#spatially-constrained-clustering-clustgeo-method",
+    "href": "proposal/project_proposal.html#spatially-constrained-clustering-clustgeo-method",
+    "title": "Project Proposal: Places of Worship",
+    "section": "7.5 Spatially Constrained Clustering: CLUSTGEO method",
+    "text": "7.5 Spatially Constrained Clustering: CLUSTGEO method\n\nGenerate Ward-like hierarchical clustering\nGenerate Choropleth Map"
   },
   {
     "objectID": "proposal/project_proposal.html#about-page",
@@ -63,24 +70,31 @@
     "text": "8.2 EDA Page"
   },
   {
-    "objectID": "proposal/project_proposal.html#kde-page",
-    "href": "proposal/project_proposal.html#kde-page",
+    "objectID": "proposal/project_proposal.html#hierarchy-clustering-page",
+    "href": "proposal/project_proposal.html#hierarchy-clustering-page",
     "title": "Project Proposal: Places of Worship",
-    "section": "8.3 KDE Page",
-    "text": "8.3 KDE Page"
+    "section": "8.3 Hierarchy Clustering Page",
+    "text": "8.3 Hierarchy Clustering Page"
   },
   {
-    "objectID": "proposal/project_proposal.html#netkde-page",
-    "href": "proposal/project_proposal.html#netkde-page",
+    "objectID": "proposal/project_proposal.html#spatially-constrained-clustering-skater-approach-page",
+    "href": "proposal/project_proposal.html#spatially-constrained-clustering-skater-approach-page",
     "title": "Project Proposal: Places of Worship",
-    "section": "8.4 NetKDE Page",
-    "text": "8.4 NetKDE Page"
+    "section": "8.4 Spatially Constrained Clustering: SKATER approach Page",
+    "text": "8.4 Spatially Constrained Clustering: SKATER approach Page"
+  },
+  {
+    "objectID": "proposal/project_proposal.html#spatially-constrained-clustering-clustgeo-method-page",
+    "href": "proposal/project_proposal.html#spatially-constrained-clustering-clustgeo-method-page",
+    "title": "Project Proposal: Places of Worship",
+    "section": "8.5 Spatially Constrained Clustering: ClustGeo Method Page",
+    "text": "8.5 Spatially Constrained Clustering: ClustGeo Method Page"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "IS415- Places of Worship",
+    "title": "IS415- CrimeWatch",
     "section": "",
-    "text": "THEME: SPATIAL POINT PATTERN ANALYSIS\nGROUP NO: 2\nGROUP MEMBERS: ALOYSIUS CEDRIC TAY, EBENEZER HO, JORDAN LEW"
+    "text": "THEME: GEOGRAPHIC SEGMENTATION\nGROUP NO: 2\nGROUP MEMBERS: ALOYSIUS CEDRIC TAY, EBENEZER HO, JORDAN LEW"
   }
 ]

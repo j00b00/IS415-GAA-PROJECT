@@ -17,34 +17,38 @@ date: "`r Sys.Date()`"
 pacman::p_load(knitr)
 ```
 
-# THEME: SPATIAL POINT PATTERN ANALYSIS
+# THEME: GEOGRAPHIC SEGMENTATION
 
-# 1 Background
+# 1 ABSTRACT
 
-The United States stands as a mosaic of diverse cultures, traditions, and belief systems. Within the country, we can find a multitude of worship places that serve as focal points for spiritual nourishment, community cohesion, and cultural expression. This project will focus on the locations of worship places across the country and unravel the spatial dimensions of religious diversity and explore the profound connections between geography and faith.
+This project involves conducting Geographical Segmentation with Spatially Constrained Clustering Techniques using the Provincial Competitiveness Index of Vietnam. Specifically, we will analyse the “law and order” dataset to segment the various province in Vietnam. The goal of the project is to create a web application that aims to aid users in performing exploratory data analysis, hierarchy cluster analysis, spatially constrained clustering and spatially contained clustering.
+
+The web application users can effortlessly analyse the data without needing any technical knowledge or expertise in data wrangling, allowing them to make useful insights from their findings.
 
 # 2 Problem & Motivation
 
-This project holds immense significance in promoting intercultural dialogue, fostering religious tolerance, and contributing to a broader understanding of the United States' multicultural identity. By studying the geographical positions of the worship places, we aim to provide valuable insights for policymakers, urban planners, researchers, and the public, facilitating informed decision-making and enhancing appreciation for the diverse religious mosaic that defines the American experience.
+The legal system of Vietnam is based on the socialism legal theory and inherited from French civil law system. However, data shows that the enforcement of these laws and regulations can differ depending on the province. This sparked our interest to investigate the reason behind this phenomenon by using clustering methods to visualise patterns within the provinces.
+
+Geospatial analytics in R allows us to manipulate and analyse data visually so that we can uncover patterns that may otherwise go unnoticed. However, geospatial analytics requires users to be experienced and seasoned in finding data on the internet and it can be tedious to wrangle with the data to the right format for processing. This interactive web application allows users to carry out analysis simply through interacting with the user interface so that even business users can operate. By providing an interactive consolidated platform for users to view data and corresponding analyses, we make the data easily accessible while still allowing for customization through the user interface.
 
 # 3 Project Objectives
 
-• Comprehensive Mapping: Create a comprehensive map detailing the geographic distribution of worship places, categorizing them by religious affiliation. This can be done in a form of drop boxes and slider bars
+1.  Conduct exploratory data analysis, correlation analysis and plot maps for preliminary analysis
 
-• Spatial Analysis: Conduct spatial analysis to identify clustering, density, and patterns of religious diversity, shedding light on the coexistence of various faith communities.
+2.  Conduct hierarchy cluster analysis
 
-• Historical Context: Integrate historical data to understand the evolution of worship places, considering factors such as migration, urbanization, and cultural shifts.
+3.  Conduct spatially constrained clustering: SKATER approach
 
-• Accessibility Assessment: Investigate the accessibility of worship places to understand how geographic factors may influence the ability of communities to engage in religious practices.
+4.  Conduct spatially contained clustering: ClustGeo method
 
 # 4 Data Sets and Descriptions
 
 ```{r}
 #| echo: false
 df <- data.frame(
-  Data = c("Singapore, Places of Worship", "Washington DC, Places of Worship", "Description/Master Plan 2019 Subzone Boundary (No Sea), Singapore", "Comprehensive planning areas, Washington DC"),
-  Type = c(".kml", ".csv", ".shp",".shp"),
-  "Description / Remarks" = c("The file contains multiple layers which the author has created on google maps. Extra caution should be taken when manipulating data", "-", "We’ll use the dataset provided in Take-home Exercise 1", "Multiple file types are available in the source. We have the option to access the data in various forms."), Source = c("https://www.google.com/maps/d/u/0/viewer?mid=1_KzKsVTCJ5mv0mZ55T0gE9gxX5EjzE9h&ll=1.3587380243374025%2C103.82081337966211&z=12", "https://opendata.dc.gov/datasets/b134de8f8eaa49499715a38ba97673c8_5/explore", "https://beta.data.gov.sg/collections/1749/view", "https://opendata.dc.gov/datasets/203c2342b36240949e0ad95d75a5bdca_2/explore")
+  Data = c("Vietnam Subnational Administrative Boundary", "Vietnam PCI indicator"),
+  Type = c(".shp",".csv"),
+  "Description / Remarks" = c("The administrative boundary consists of 3 levels. 0- country level, 1- Province level, 2- district.", "PCI indicator consists of different factors that help gauge the performance of provinces. The site offers yearly PCI data."), Source = c("https://data.humdata.org/dataset/cod-ab-vnm?", "https://pcivietnam.vn/en/pci-data")
 )
 
 knitr::kable(df)
@@ -60,33 +64,42 @@ knitr::include_graphics("img/data_preparation_and_diagram_flow.png")
 
 # 6 Literature Review
 
-## **Title: Towards a spatial theory of worship, Some observations from Presbyterian Scotland**
+## **Title: Delineating Social Area Analysis using Geographic Segmentation Approach**
 
-**Source:** <https://doi-org.libproxy.smu.edu.sg/10.1080/14649360120114143>
+**Source:** <https://rpubs.com/YuMengTing/618944>
 
-**Summary:** The argue that 'worship', a term which has no universal application in religious studies, has been thinly conceived in geographical literature and must be examined both as process and as practice. Worship is here considered as the dynamic and varied human response to the theological proposition of Divinity. Specifically, the paper explores the dialectic between the theology of the Reformation and the practice of formal worship, a relation that is given a spatial expression in the Sabbath service.
+**Summary:** Social area analysis (SAA), which is a generic name for a number of methods employing census and other data to classify small areas into similar socioeconomic groups, is an approach which quantifies data in a useful fashion and has important applications in regional development, urban planning, medical and health services research. The potentialities of the approach for Liveable City planning and Smart City preparedness, however, have yet to be explored.
 
-## **Title: Religion gnaws urban planning: the geography of places of worship in Kumasi, Ghana**
+```{r}
+#| echo: false
+knitr::include_graphics("img/fig_1.jpg")
+```
 
-**Source**: <https://www.tandfonline.com/doi/full/10.1080/19463138.2015.1074581>
+**Learning points:** The initial stages of data preparation have to be done very meticulously as we want to avoid misrepresentation. For skater analysis, when plotting spatially constrained clusters (Figure 1), it will be better to accompany it with a choropleth map to aid visualization of clusters.
 
-**Summary**: investigates spatial distribution of places of worship (PoW) and its implications on sustainable land use planning in a rapidly urbanising city of Kumasi, Ghana. Using semi-structured interviews, document reviews and agency consultations, this paper focused on three issues: (a) the location and distribution of PoW, (b) factors considered in the location of these PoW by faith groups and (c) planning implications of PoW.
+## **Title: An R package for hierarchical clustering with spatial constraints**
 
-## **Title: Spatial Analysis with R: Statistics, Visualization, and Computational Methods**
+**Source**: <https://arxiv.org/pdf/1707.03897.pdf>
 
-**Source:** [https://books.google.com.sg/books?hl=en&lr=&id=ng75DwAAQBAJ&oi=fnd&pg=PP1&dq =spatial+point+patterns+of+places+of+worshi+analytics&ots= iTMGhgvdJw&sig=v9jEiUcWEQD64Uj8iG7mpiemNIQ&redir_esc=y#v=onepage&q=spatial %20point%20patterns%20of%20places%20of%20worship%20analytics&f=false](https://books.google.com.sg/books?hl=en&lr=&id=ng75DwAAQBAJ&oi=fnd&pg=PP1&dq%20=spatial+point+patterns+of+places+of+worshi+analytics&ots=%20iTMGhgvdJw&sig=v9jEiUcWEQD64Uj8iG7mpiemNIQ&redir_esc=y#v=onepage&q=spatial%20%20point%20patterns%20of%20places%20of%20worship%20analytics&f=false)
+**Summary:** In this paper, the authors propose a ward-like hierarchical clustering algorithm including spatial constraints. The dissimilarities can be non-euclidean and the weights of the observations can be non uniform.
 
-**Summary:** The use and growth of AI, ML and deep learning algorithms with a spatial perspective, and the interdisciplinary use of spatial analysis are all covered in this book. It covers traditional statistical method and algorithms to provide a concept-based problem solving learning approach to mastering practical spatial analytics.
+**Learning points:** When trying to carry out Hierarchical clustering, we need to have a dissimilarity matrix D of class dist. It is important for us to alter or transform our matrix to an appropriate data type for the function to work properly. The highlight of the paper is the calculation and algorithms used to do clustering.
 
-## **Lit-Review Learning points:**
+## **Title: Cluster Analysis and Segmentation**
 
-Apart from the articles we have read above, we understand that the concept of geospatial is barely used in conjunction to places of worship. However, it is essential for the current age of society to understand the impact of worship. The analytical understanding is minimal and therefore we aim to provide more understanding over the religious places in both countries.
+**Source:** [https://inseaddataanalytics.github.io/INSEADAnalytics/](https://inseaddataanalytics.github.io/INSEADAnalytics/CourseSessions/Sessions45/ClusterAnalysisReading.html#step_8:_robustness_analysis){.uri}
+
+[CourseSessions/Sessions45/ClusterAnalysisReading.html#step_8:\_robustness_analysis](https://inseaddataanalytics.github.io/INSEADAnalytics/CourseSessions/Sessions45/ClusterAnalysisReading.html#step_8:_robustness_analysis){.uri}
+
+**Summary:** In Data Analytics we often have very large data (many observations - “rows in a flat file”), which are however similar to each other hence we may want to organize them in a few clusters with similar observations within each cluster. For example, in the case of customer data, even though we may have data from millions of customers, these customers may only belong to a few segments: customers are similar within each segment but different across segments. We may often want to analyze each segment separately, as they may behave differently.
+
+**Learning points:** Much like any data analysis, segmentation is an iterative process with many variations of data, methods, number of clusters, and profiles generated until a satisfying solution is reached. The paper discusses examples on how to test the statistical robustness and stability of interpretation of clusters found using 2 different approaches.
 
 # 7 Methodology
 
 ## 7.1 Data Preparation
 
--   Data source from online platforms
+-   Data sources from online platforms
 
 -   Importing spatial data into the R environment
 
@@ -96,18 +109,35 @@ Apart from the articles we have read above, we understand that the concept of ge
 
 -   Plotting up graphs for visualization and better understanding of the data
 
--   Examine the distribution of spatial points
+    -   Histogram - identify the overall distribution of data value
 
-## 7.3 Spatial Point Patterns Analysis
+    -   Box-plot - detect outliers
 
--   First-Order Analysis
+    -   Choropleth Map - Visualize the distribution on a province-level
 
-    -   Kernel Density Estimation Mapping - Observe the intensity or the density of points
-    -   Nearest Neighbor Analysis - Examine the distribution patterns
+## 7.3 Hierarchy Cluster Analysis
 
--   Network Constrained Spatial Point Patterns Analysis
+-   Data Standardization (if necessary)
 
-    -   Using G and K function Analysis - Observe the degree of clustering or dispersion of the spatial points
+-   Generate Cluster Dendrogram
+
+-   Gap Statistic Method
+
+-   Generate cluster heatmap
+
+## 7.4 Spatially Constrained Clustering: SKATER approach
+
+-   Getting the Neighbor List
+
+-   Compute minimum spanning tree
+
+-   Generate neighbors map
+
+## 7.5  Spatially Constrained Clustering: CLUSTGEO method
+
+-   Generate Ward-like hierarchical clustering
+
+-   Generate Choropleth Map
 
 # 8 Storyboard
 
@@ -125,18 +155,27 @@ knitr::include_graphics("img/about_page.jpg")
 knitr::include_graphics("img/eda_page.jpg")
 ```
 
-## 8.3 KDE Page
+## 8.3 Hierarchy Clustering Page
 
 ```{r}
 #| echo: false
-knitr::include_graphics("img/kde_page.jpg")
+knitr::include_graphics("img/hierarchy_cluster.jpg")
 ```
 
-## 8.4 NetKDE Page
+## 8.4 Spatially Constrained Clustering: SKATER approach Page
 
 ```{r}
 #| echo: false
-knitr::include_graphics("img/netkde_page.jpg")
+knitr::include_graphics("img/skater_method.jpg")
+
+```
+
+## 8.5 Spatially Constrained Clustering: ClustGeo Method Page
+
+```{r}
+#| echo: false
+knitr::include_graphics("img/clustgeo_method.jpg")
+
 ```
 
 # 9 Application architecture
@@ -151,5 +190,4 @@ knitr::include_graphics("img/application_architecture.jpg")
 ```{r}
 #| echo: false
 knitr::include_graphics("img/project_timeline.jpg")
-
 ```

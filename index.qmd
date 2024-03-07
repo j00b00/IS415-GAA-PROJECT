@@ -1,8 +1,8 @@
 ---
-title: "IS415- Places of Worship"
+title: "IS415- CrimeWatch"
 ---
 
-THEME: SPATIAL POINT PATTERN ANALYSIS
+THEME: GEOGRAPHIC SEGMENTATION
 
 GROUP NO: 2
 
