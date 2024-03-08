@@ -35,25 +35,25 @@
     "text": "7.2 Exploratory Data Analysis\n\nPlotting up graphs for visualization and better understanding of the data\n\nHistogram - identify the overall distribution of data value\nBox-plot - detect outliers\nChoropleth Map - Visualize the distribution on a province-level"
   },
   {
-    "objectID": "proposal/project_proposal.html#hierarchy-cluster-analysis",
-    "href": "proposal/project_proposal.html#hierarchy-cluster-analysis",
+    "objectID": "proposal/project_proposal.html#hierarchy-cluster-analysis---jordan",
+    "href": "proposal/project_proposal.html#hierarchy-cluster-analysis---jordan",
     "title": "Project Proposal: Places of Worship",
-    "section": "7.3 Hierarchy Cluster Analysis",
-    "text": "7.3 Hierarchy Cluster Analysis\n\nData Standardization (if necessary)\nGenerate Cluster Dendrogram\nGap Statistic Method\nGenerate cluster heatmap"
+    "section": "7.3 Hierarchy Cluster Analysis - Jordan",
+    "text": "7.3 Hierarchy Cluster Analysis - Jordan\n\nData Standardization (if necessary)\nGenerate Cluster Dendrogram\nGap Statistic Method\nGenerate cluster heatmap"
   },
   {
-    "objectID": "proposal/project_proposal.html#spatially-constrained-clustering-skater-approach",
-    "href": "proposal/project_proposal.html#spatially-constrained-clustering-skater-approach",
+    "objectID": "proposal/project_proposal.html#spatially-constrained-clustering-skater-approach---ebenezer",
+    "href": "proposal/project_proposal.html#spatially-constrained-clustering-skater-approach---ebenezer",
     "title": "Project Proposal: Places of Worship",
-    "section": "7.4 Spatially Constrained Clustering: SKATER approach",
-    "text": "7.4 Spatially Constrained Clustering: SKATER approach\n\nGetting the Neighbor List\nCompute minimum spanning tree\nGenerate neighbors map"
+    "section": "7.4 Spatially Constrained Clustering: SKATER approach - Ebenezer",
+    "text": "7.4 Spatially Constrained Clustering: SKATER approach - Ebenezer\n\nGetting the Neighbor List\nCompute minimum spanning tree\nGenerate neighbors map"
   },
   {
-    "objectID": "proposal/project_proposal.html#spatially-constrained-clustering-clustgeo-method",
-    "href": "proposal/project_proposal.html#spatially-constrained-clustering-clustgeo-method",
+    "objectID": "proposal/project_proposal.html#spatially-constrained-clustering-clustgeo-method---aloysius",
+    "href": "proposal/project_proposal.html#spatially-constrained-clustering-clustgeo-method---aloysius",
     "title": "Project Proposal: Places of Worship",
-    "section": "7.5 Spatially Constrained Clustering: CLUSTGEO method",
-    "text": "7.5 Spatially Constrained Clustering: CLUSTGEO method\n\nGenerate Ward-like hierarchical clustering\nGenerate Choropleth Map"
+    "section": "7.5 Spatially Constrained Clustering: CLUSTGEO method - Aloysius",
+    "text": "7.5 Spatially Constrained Clustering: CLUSTGEO method - Aloysius\n\nGenerate Ward-like hierarchical clustering\nGenerate Choropleth Map"
   },
   {
     "objectID": "proposal/project_proposal.html#about-page",

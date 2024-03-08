@@ -115,7 +115,7 @@ knitr::include_graphics("img/fig_1.jpg")
 
     -   Choropleth Map - Visualize the distribution on a province-level
 
-## 7.3 Hierarchy Cluster Analysis
+## 7.3 Hierarchy Cluster Analysis - Jordan
 
 -   Data Standardization (if necessary)
 
@@ -125,7 +125,7 @@ knitr::include_graphics("img/fig_1.jpg")
 
 -   Generate cluster heatmap
 
-## 7.4 Spatially Constrained Clustering: SKATER approach
+## 7.4 Spatially Constrained Clustering: SKATER approach - Ebenezer
 
 -   Getting the Neighbor List
 
@@ -133,7 +133,7 @@ knitr::include_graphics("img/fig_1.jpg")
 
 -   Generate neighbors map
 
-## 7.5  Spatially Constrained Clustering: CLUSTGEO method
+## 7.5  Spatially Constrained Clustering: CLUSTGEO method - Aloysius
 
 -   Generate Ward-like hierarchical clustering
 
