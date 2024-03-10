@@ -7,3 +7,13 @@ THEME: GEOGRAPHIC SEGMENTATION
 GROUP NO: 2
 
 GROUP MEMBERS: ALOYSIUS CEDRIC TAY, EBENEZER HO, JORDAN LEW
+
+# CONTENTS
+
+1.  [Project Proposal](https://is415-g2-crimewatch.netlify.app/proposal/project_proposal)
+
+2.  Project Poster
+
+3.  [Shiny Application](https://jordanlew.shinyapps.io/IS415-G2-CrimeWatch/)
+
+4.  User Guide

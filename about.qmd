@@ -1,3 +1,21 @@
 ---
-title: "About"
+title: "About Us"
 ---
+
+# **Crimewatch**
+
+The Crimewatch roject comprises three individuals from the School of Computing and Information Systems at Singapore Management University, all enrolled in the IS415 Geospatial Analytics and Applications course. Meet our team members below!
+
+# Aloysius Cedric Tay
+
+[LinkedIn](https://www.linkedin.com/in/aloysiuscedrictay/)
+
+# Ebenezer Ho
+
+[LinkedIn](https://www.linkedin.com/in/ebenezer-ho-820928272/)
+
+# Jordan Lew
+
+[LinkedIn](www.linkedin.com/in/lewyuanzhenjordan)
+
+# 
