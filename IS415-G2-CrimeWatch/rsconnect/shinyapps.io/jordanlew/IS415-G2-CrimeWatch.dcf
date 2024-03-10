@@ -1,0 +1,12 @@
+name: IS415-G2-CrimeWatch
+title: IS415-G2-CrimeWatch
+username: jordanlew
+account: jordanlew
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11450023
+bundleId: 8354371
+url: https://jordanlew.shinyapps.io/IS415-G2-CrimeWatch/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
