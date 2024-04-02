@@ -1,5 +1,5 @@
 ---
-title: "Project Proposal: Places of Worship"
+title: "Project Proposal: CrimeWatch"
 format:
   html:
     code-fold: true
@@ -133,7 +133,7 @@ knitr::include_graphics("img/fig_1.jpg")
 
 -   Generate neighbors map
 
-## 7.5  Spatially Constrained Clustering: CLUSTGEO method - Aloysius
+## 7.5 Spatially Constrained Clustering: CLUSTGEO method - Aloysius
 
 -   Generate Ward-like hierarchical clustering
 
