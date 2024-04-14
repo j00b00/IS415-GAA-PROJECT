@@ -145,7 +145,7 @@ ui <- fluidPage(
                                                                  selectInput(inputId="inMeasure",
                                                                              label="Select Variable",
                                                                              choices=varMeasure1,
-                                                                             selected="secuirty_ind",
+                                                                             selected="security_ind",
                                                                              multiple=FALSE,
                                                                              width="100%"),
 

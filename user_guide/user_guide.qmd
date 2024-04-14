@@ -78,7 +78,7 @@ This tab shows the exploratory data analysis.
         knitr::include_graphics("img/boxplot.png")
         ```
 
-        # ESDA
+# ESDA
 
 EDSA Tab
 
@@ -144,12 +144,12 @@ This tab shows the different types of clustering segmentation. (Clustering Map a
 
         d\. Gangster
 
-        ```{r}
-        #| echo: false
-        knitr::include_graphics("img/clustering1.png")
-        ```
+```{r}
+#| echo: false
+knitr::include_graphics("img/clustering1.png")
+```
 
-Clustering
+-   Clustering
 
 1.  Users can remove or add variables to see the correlation. (4 variables)
 
@@ -165,13 +165,11 @@ Clustering
 
 3.  Users can select the different Clustering Methods to use. (3 clustering method)
 
-```         
-a\. Hierarchical Clustering
+    a\. Hierarchical Clustering
 
-b\. ClustGEO
+    b\. ClustGEO
 
-c\. SKATER
-```
+    c\. SKATER
 
 ```{r}
 #| echo: false
