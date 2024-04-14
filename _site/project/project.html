@@ -131,10 +131,14 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#storyboard" id="toc-storyboard" class="nav-link" data-scroll-target="#storyboard">8 Storyboard</a>
   <ul class="collapse">
-  <li><a href="#eda-page-histogram" id="toc-eda-page-histogram" class="nav-link" data-scroll-target="#eda-page-histogram">8.1 EDA Page Histogram</a></li>
-  <li><a href="#eda-page-box-plot" id="toc-eda-page-box-plot" class="nav-link" data-scroll-target="#eda-page-box-plot">8.2 EDA Page Box Plot</a></li>
-  <li><a href="#esda" id="toc-esda" class="nav-link" data-scroll-target="#esda">8.3 ESDA</a></li>
-  <li><a href="#clustering" id="toc-clustering" class="nav-link" data-scroll-target="#clustering">8.4 Clustering</a></li>
+  <li><a href="#initial-prototype" id="toc-initial-prototype" class="nav-link" data-scroll-target="#initial-prototype">8.1 Initial Prototype</a></li>
+  <li><a href="#finalise-prototype" id="toc-finalise-prototype" class="nav-link" data-scroll-target="#finalise-prototype">8.2 Finalise Prototype</a>
+  <ul class="collapse">
+  <li><a href="#eda-page-histogram" id="toc-eda-page-histogram" class="nav-link" data-scroll-target="#eda-page-histogram">8.2.1 EDA Page Histogram</a></li>
+  <li><a href="#eda-page-box-plot" id="toc-eda-page-box-plot" class="nav-link" data-scroll-target="#eda-page-box-plot">8.2.2 EDA Page Box Plot</a></li>
+  <li><a href="#esda" id="toc-esda" class="nav-link" data-scroll-target="#esda">8.2.3 ESDA</a></li>
+  <li><a href="#clustering" id="toc-clustering" class="nav-link" data-scroll-target="#clustering">8.2.4 Clustering</a></li>
+  </ul></li>
   </ul></li>
   <li><a href="#application-architecture" id="toc-application-architecture" class="nav-link" data-scroll-target="#application-architecture">9 Application architecture</a></li>
   <li><a href="#project-timeline" id="toc-project-timeline" class="nav-link" data-scroll-target="#project-timeline">10 Project timeline</a></li>
@@ -172,21 +176,21 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="abstract" class="level1">
 <h1>1 ABSTRACT</h1>
-<p>This project involves conducting Geographical Segmentation with Spatially Constrained Clustering Techniques using the Provincial Competitiveness Index of Vietnam. Specifically, we will analyse the “law and order” dataset to segment the various province in Vietnam. The goal of the project is to create a web application that aims to aid users in performing exploratory data analysis, hierarchy cluster analysis, spatially constrained clustering and spatially contained clustering.</p>
-<p>The web application users can effortlessly analyse the data without needing any technical knowledge or expertise in data wrangling, allowing them to make useful insights from their findings.</p>
+<p>This project involves 3 main segments, mainly, conducting Exploratory Spatial Data Analysis, Geographical Segmentation with Spatially Constrained Clustering Techniques, and Local Indicators of Spatial association techniques using the Provincial Competitiveness Index of Vietnam. Specifically, we will analyze the “law and order” dataset to reveal preliminary findings, segment the various provinces in Vietnam as well as identify cold and hotspots amongst the province of Vietnam. The goal of the project is to create a web application that aims to aid users in performing exploratory data analysis, hierarchy cluster analysis, spatially constrained clustering, spatially contained clustering, and cold/hotspot analysis. The web application users can effortlessly analyze the data by adjusting variable inputs without needing any technical knowledge or expertise in data wrangling, allowing them to make useful insights from their findings</p>
 </section>
 <section id="problem-motivation" class="level1">
 <h1>2 Problem &amp; Motivation</h1>
 <p>The legal system of Vietnam is based on the socialism legal theory and inherited from French civil law system. However, data shows that the enforcement of these laws and regulations can differ depending on the province. This sparked our interest to investigate the reason behind this phenomenon by using clustering methods to visualise patterns within the provinces.</p>
-<p>Geospatial analytics in R allows us to manipulate and analyse data visually so that we can uncover patterns that may otherwise go unnoticed. However, geospatial analytics requires users to be experienced and seasoned in finding data on the internet and it can be tedious to wrangle with the data to the right format for processing. This interactive web application allows users to carry out analysis simply through interacting with the user interface so that even business users can operate. By providing an interactive consolidated platform for users to view data and corresponding analyses, we make the data easily accessible while still allowing for customization through the user interface.</p>
+<p>Geospatial analytics in R allows us to manipulate and analyse data visually so that we can uncover patterns that may otherwise go unnoticed. However, geospatial analytics requires users to be experienced and seasoned in finding data on the internet and it can be tedious to wrangle with the data to the right format for processing. This interactive web application allows users to carry out analysis simply through interacting with the user interface so that even business users can operate. By providing an interactive consolidated platform for users to view data and corresponding analyses, we make the data easily accessible while still allowing for customization through the user interface. Exploratory Spatial Data Analysis, we can investigate the dataset and summarize their main characteristics. It aims to provide us a sense of how “good” or “bad” our dataset is, allowing us to make more logical conclusions based on the findings.</p>
+<p>The Clustering technique is crucial to allow us to realize how similar or dissimilar a group or a point of data is compared to others. This important information can allow users to do audience segmentation. Lastly, the cold/hotspot analysis helps to reinforce the findings of the clustering analysis and helps user to better visualize these clusters based on their densities.</p>
 </section>
 <section id="project-objectives" class="level1">
 <h1>3 Project Objectives</h1>
 <ol type="1">
-<li><p>Conduct exploratory data analysis, correlation analysis and plot maps for preliminary analysis</p></li>
-<li><p>Conduct hierarchy cluster analysis</p></li>
-<li><p>Conduct spatially constrained clustering: SKATER approach</p></li>
-<li><p>Conduct spatially contained clustering: ClustGeo method</p></li>
+<li><p>Interactive user interface design</p></li>
+<li><p>Conduct exploratory data analysis using correlation analysis, histograms, boxplots, and box maps for preliminary analysis.</p></li>
+<li><p>Conduct hierarchy cluster analysis using the SKATER approach, Hierarchical Clustering, and ClustGeo method.</p></li>
+<li><p>Conduct LISA cold/hotspot analysis using Moran’s I method.</p></li>
 </ol>
 </section>
 <section id="data-sets-and-descriptions" class="level1">
@@ -306,37 +310,80 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="storyboard" class="level1">
 <h1>8 Storyboard</h1>
-<section id="eda-page-histogram" class="level2">
-<h2 class="anchored" data-anchor-id="eda-page-histogram">8.1 EDA Page Histogram</h2>
+<p>In this section, we delve into the intricate process of ideation and its indispensable companion, initial prototyping. Here, we recognize the paramount importance of prototyping as the bridge between conception and realization, the tool through which ideas are refined, tested, and ultimately perfected. Join us as we navigate through the meticulous craft of ideation, and witness firsthand the transformative power of prototyping in bringing visionary concepts to fruition.We look into the depths of our project to determine what sort of design we’ll strive towards.</p>
+<section id="initial-prototype" class="level3">
+<h3 class="anchored" data-anchor-id="initial-prototype">8.1 Initial Prototype</h3>
+<p>8.1.1 EDA Histogram</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/histogram.png" class="img-fluid" width="402"></p>
+</div>
+</div>
+<p>8.1.2 EDA Box Plot</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/boxplot.png" class="img-fluid" width="414"></p>
+</div>
+</div>
+<p>8.1.3 Hierarchical Clustering</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/HCA_ChoroplethMap.png" class="img-fluid" width="416"></p>
+</div>
+<div class="cell-output-display">
+<p><img src="img/dendogram.png" class="img-fluid" width="417"></p>
+</div>
+</div>
+<p>8.1.4 SKATER</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/SKATER.jpg" class="img-fluid"></p>
+</div>
+</div>
+<p>8.1.5 ClustGeo</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/ClustGeo.png" class="img-fluid" width="998"></p>
+</div>
+<div class="cell-output-display">
+<p><img src="img/clustgeo2.png" class="img-fluid" width="994"></p>
+</div>
+</div>
+</section>
+<section id="finalise-prototype" class="level2">
+<h2 class="anchored" data-anchor-id="finalise-prototype">8.2 Finalise Prototype</h2>
+<section id="eda-page-histogram" class="level3">
+<h3 class="anchored" data-anchor-id="eda-page-histogram">8.2.1 EDA Page Histogram</h3>
 <div class="cell">
 <div class="cell-output-display">
 <p><img src="img/histogram.jpg" class="img-fluid"></p>
 </div>
 </div>
 </section>
-<section id="eda-page-box-plot" class="level2">
-<h2 class="anchored" data-anchor-id="eda-page-box-plot">8.2 EDA Page Box Plot</h2>
+<section id="eda-page-box-plot" class="level3">
+<h3 class="anchored" data-anchor-id="eda-page-box-plot">8.2.2 EDA Page Box Plot</h3>
 <div class="cell">
 <div class="cell-output-display">
 <p><img src="img/boxplot.jpg" class="img-fluid"></p>
 </div>
 </div>
 </section>
-<section id="esda" class="level2">
-<h2 class="anchored" data-anchor-id="esda">8.3 ESDA</h2>
+<section id="esda" class="level3">
+<h3 class="anchored" data-anchor-id="esda">8.2.3 ESDA</h3>
 <div class="cell">
 <div class="cell-output-display">
 <p><img src="img/ESDA.jpg" class="img-fluid"></p>
 </div>
 </div>
 </section>
-<section id="clustering" class="level2">
-<h2 class="anchored" data-anchor-id="clustering">8.4 Clustering</h2>
+<section id="clustering" class="level3">
+<h3 class="anchored" data-anchor-id="clustering">8.2.4 Clustering</h3>
 <div class="cell">
 <div class="cell-output-display">
 <p><img src="img/clustering.jpg" class="img-fluid"></p>
 </div>
 </div>
+</section>
 </section>
 </section>
 <section id="application-architecture" class="level1">

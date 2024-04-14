@@ -48,7 +48,7 @@ ui <- fluidPage(
                 navbarPage("CrimeWatch", id = "navbar",
                            fluid = TRUE, 
                            windowTitle = "CrimeWatch: Vietnam Law and Order Geo-Spatial Analysis",
-                           selected="data",
+                           selected="clustering",
 
                            
                            #Data Panel

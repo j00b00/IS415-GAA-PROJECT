@@ -10,7 +10,7 @@ GROUP MEMBERS: ALOYSIUS CEDRIC TAY, EBENEZER HO, JORDAN LEW
 
 # CONTENTS
 
-1.  [Project](https://is415-g2-crimewatch.netlify.app/project/project.html)
+1.  [Project](https://is415-g2-crimewatch.netlify.app/project/project.html/)
 
 2.  Project Poster
 
