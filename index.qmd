@@ -10,10 +10,10 @@ GROUP MEMBERS: ALOYSIUS CEDRIC TAY, EBENEZER HO, JORDAN LEW
 
 1.  [Project](https://is415-g2-crimewatch.netlify.app/project/project.html/)
 
-2.  Project Poster
+2.  [Project Poster](https://is415-g2-crimewatch.netlify.app/poster/poster)
 
 3.  [Shiny Application](https://jordanlew.shinyapps.io/IS415-G2-CrimeWatch/)
 
-4.  User Guide
+4.  [User Guide](https://is415-g2-crimewatch.netlify.app/user_guide/user_guide)
 
-5.  Minutes of Meeting
+5.  [Minutes of Meeting](https://is415-g2-crimewatch.netlify.app/meeting/meeting)
