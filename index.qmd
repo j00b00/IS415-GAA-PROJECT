@@ -17,3 +17,5 @@ GROUP MEMBERS: ALOYSIUS CEDRIC TAY, EBENEZER HO, JORDAN LEW
 3.  [Shiny Application](https://jordanlew.shinyapps.io/IS415-G2-CrimeWatch/)
 
 4.  User Guide
+
+5.  Minutes of Meeting

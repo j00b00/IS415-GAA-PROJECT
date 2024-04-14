@@ -95,14 +95,14 @@
     "href": "about.html",
     "title": "About Us",
     "section": "",
-    "text": "Crimewatch\nThe Crimewatch roject comprises three individuals from the School of Computing and Information Systems at Singapore Management University, all enrolled in the IS415 Geospatial Analytics and Applications course. Meet our team members below!\n\n\nAloysius Cedric Tay\nLinkedIn\n\n\nEbenezer Ho\nLinkedIn\n\n\nJordan Lew\nLinkedIn"
+    "text": "Crimewatch - Vietnam Law and Order Geosptial Analysis\nThe Crimewatch project comprises three individuals from the School of Computing and Information Systems at Singapore Management University, all enrolled in the IS415 Geospatial Analytics and Applications course. Meet our team members below!\n\n\nAloysius Cedric Tay\nLinkedIn\n\n\nEbenezer Ho\nLinkedIn\n\n\nJordan Lew\nLinkedIn"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "IS415- CrimeWatch",
     "section": "",
-    "text": "THEME: GEOGRAPHIC SEGMENTATION\nGROUP NO: 2\nGROUP MEMBERS: ALOYSIUS CEDRIC TAY, EBENEZER HO, JORDAN LEW\n\nCONTENTS\n\nProject\nProject Poster\nShiny Application\nUser Guide"
+    "text": "THEME: GEOGRAPHIC SEGMENTATION\nGROUP NO: 2\nGROUP MEMBERS: ALOYSIUS CEDRIC TAY, EBENEZER HO, JORDAN LEW\n\nCONTENTS\n\nProject\nProject Poster\nShiny Application\nUser Guide\nMeeting of Meeting"
   },
   {
     "objectID": "proposal/project_proposal.html#exploratory-spatial-data-analysis",
@@ -149,49 +149,49 @@
   {
     "objectID": "project/project.html#title-delineating-social-area-analysis-using-geographic-segmentation-approach",
     "href": "project/project.html#title-delineating-social-area-analysis-using-geographic-segmentation-approach",
-    "title": "Project: CrimeWatch Vietnam Law and Order Geosptial Analysis",
+    "title": "Project: CrimeWatch - Vietnam Law and Order Geosptial Analysis",
     "section": "Title: Delineating Social Area Analysis using Geographic Segmentation Approach",
     "text": "Title: Delineating Social Area Analysis using Geographic Segmentation Approach\nSource: https://rpubs.com/YuMengTing/618944\nSummary: Social area analysis (SAA), which is a generic name for a number of methods employing census and other data to classify small areas into similar socioeconomic groups, is an approach which quantifies data in a useful fashion and has important applications in regional development, urban planning, medical and health services research. The potentialities of the approach for Liveable City planning and Smart City preparedness, however, have yet to be explored.\n\n\n\n\n\nLearning points: The initial stages of data preparation have to be done very meticulously as we want to avoid misrepresentation. For skater analysis, when plotting spatially constrained clusters (Figure 1), it will be better to accompany it with a choropleth map to aid visualization of clusters."
   },
   {
     "objectID": "project/project.html#title-an-r-package-for-hierarchical-clustering-with-spatial-constraints",
     "href": "project/project.html#title-an-r-package-for-hierarchical-clustering-with-spatial-constraints",
-    "title": "Project: CrimeWatch Vietnam Law and Order Geosptial Analysis",
+    "title": "Project: CrimeWatch - Vietnam Law and Order Geosptial Analysis",
     "section": "Title: An R package for hierarchical clustering with spatial constraints",
     "text": "Title: An R package for hierarchical clustering with spatial constraints\nSource: https://arxiv.org/pdf/1707.03897.pdf\nSummary: In this paper, the authors propose a ward-like hierarchical clustering algorithm including spatial constraints. The dissimilarities can be non-euclidean and the weights of the observations can be non uniform.\nLearning points: When trying to carry out Hierarchical clustering, we need to have a dissimilarity matrix D of class dist. It is important for us to alter or transform our matrix to an appropriate data type for the function to work properly. The highlight of the paper is the calculation and algorithms used to do clustering."
   },
   {
     "objectID": "project/project.html#title-cluster-analysis-and-segmentation",
     "href": "project/project.html#title-cluster-analysis-and-segmentation",
-    "title": "Project: CrimeWatch Vietnam Law and Order Geosptial Analysis",
+    "title": "Project: CrimeWatch - Vietnam Law and Order Geosptial Analysis",
     "section": "Title: Cluster Analysis and Segmentation",
     "text": "Title: Cluster Analysis and Segmentation\nSource: https://inseaddataanalytics.github.io/INSEADAnalytics/\nCourseSessions/Sessions45/ClusterAnalysisReading.html#step_8:_robustness_analysis\nSummary: In Data Analytics we often have very large data (many observations - “rows in a flat file”), which are however similar to each other hence we may want to organize them in a few clusters with similar observations within each cluster. For example, in the case of customer data, even though we may have data from millions of customers, these customers may only belong to a few segments: customers are similar within each segment but different across segments. We may often want to analyze each segment separately, as they may behave differently.\nLearning points: Much like any data analysis, segmentation is an iterative process with many variations of data, methods, number of clusters, and profiles generated until a satisfying solution is reached. The paper discusses examples on how to test the statistical robustness and stability of interpretation of clusters found using 2 different approaches."
   },
   {
     "objectID": "project/project.html#data-preparation",
     "href": "project/project.html#data-preparation",
-    "title": "Project: CrimeWatch Vietnam Law and Order Geosptial Analysis",
+    "title": "Project: CrimeWatch - Vietnam Law and Order Geosptial Analysis",
     "section": "7.1 Data Preparation",
     "text": "7.1 Data Preparation\n\nData sources from online platforms\nImporting spatial data into the R environment\nData wrangling"
   },
   {
     "objectID": "project/project.html#exploratory-data-analysis",
     "href": "project/project.html#exploratory-data-analysis",
-    "title": "Project: CrimeWatch Vietnam Law and Order Geosptial Analysis",
+    "title": "Project: CrimeWatch - Vietnam Law and Order Geosptial Analysis",
     "section": "7.2 Exploratory Data Analysis",
     "text": "7.2 Exploratory Data Analysis\n\nPlotting up graphs for visualization and better understanding of the data\n\nHistogram - Visualize the distribution of data by bins each representing a range of data values\nPercentile Map - A quantile map to visualize the distribution of data on a map\nBox-plot - Visualize the distribution of data by graphically depicting groups of data through their quartiles\nBox Map - An augmented quantile map with an additional lower and upper category to visualize the distribution of the data on a map"
   },
   {
     "objectID": "project/project.html#exploratory-spatial-data-analysis",
     "href": "project/project.html#exploratory-spatial-data-analysis",
-    "title": "Project: CrimeWatch Vietnam Law and Order Geosptial Analysis",
+    "title": "Project: CrimeWatch - Vietnam Law and Order Geosptial Analysis",
     "section": "7.3 Exploratory Spatial Data Analysis",
     "text": "7.3 Exploratory Spatial Data Analysis\n\nVisualize spatial data and examine the spatial distribution of data points\n\nLISA - Identify spatial clusters or patterns of similarity and dissimilarity"
   },
   {
     "objectID": "project/project.html#geographical-segmentation-with-spatially-constrained-cluster-analysis",
     "href": "project/project.html#geographical-segmentation-with-spatially-constrained-cluster-analysis",
-    "title": "Project: CrimeWatch Vietnam Law and Order Geosptial Analysis",
+    "title": "Project: CrimeWatch - Vietnam Law and Order Geosptial Analysis",
     "section": "7.4 Geographical Segmentation with Spatially Constrained Cluster Analysis",
     "text": "7.4 Geographical Segmentation with Spatially Constrained Cluster Analysis\n\nDivide a target market by location to allow marketers to better serve customers in a particular area\n\nHierarchy Cluster Analysis - Classify objects into clusters based on similarity or dissimilarity.\nSpatially Constrained Clustering: SKATER approach - Uses spatial proximity to identify spatial patterns\nSpatially Constrained Clustering: CLUSTGEO method - Partition spatial data into cluster base on attribute similarity and spatial contiguity."
   },
@@ -226,8 +226,15 @@
   {
     "objectID": "project/project.html#finalise-prototype",
     "href": "project/project.html#finalise-prototype",
-    "title": "Project: CrimeWatch Vietnam Law and Order Geosptial Analysis",
+    "title": "Project: CrimeWatch - Vietnam Law and Order Geosptial Analysis",
     "section": "8.2 Finalise Prototype",
     "text": "8.2 Finalise Prototype\n\n8.2.1 EDA Page Histogram\n\n\n\n\n\n\n\n8.2.2 EDA Page Box Plot\n\n\n\n\n\n\n\n8.2.3 ESDA\n\n\n\n\n\n\n\n8.2.4 Clustering"
+  },
+  {
+    "objectID": "meeting/meeting.html",
+    "href": "meeting/meeting.html",
+    "title": "Minutes of Meeting CrimeWatch - Vietnam Law and Order Geosptial Analysis",
+    "section": "",
+    "text": "Here, you’ll find a comprehensive record of our discussions, decisions, and actions taken during our meetings. This archive serves as a vital tool for maintaining transparency, accountability, and alignment within our team. By revisiting past meetings, we can ensure everyone remains informed, objectives are clear, and progress is tracked effectively. Dive into the details to gain valuable context, understand the evolution of our projects, and stay connected with our collective journey. For consultations with Professor, we will embed them into the weeks’ notes.\nWe aimed to meet every week to ensure that the project team stays consistent throughout the semester.\n\n\n\n\n\n\n\n\n\n\nWeek\nMembers\nMinutes\n\n\n\n\n7\nAloysius, Ebenezer, Jordan\nLink\n\n\n8\nAloysius, Ebenezer, Jordan\nLink\n\n\n9\nAloysius, Ebenezer, Jordan\nLink\n\n\n10\nAloysius, Ebenezer, Jordan\nLink\n\n\n12\nAloysius, Ebenezer, Jordan\nLink\n\n\n13\nAloysius, Ebenezer, Jordan\nLink"
   }
 ]

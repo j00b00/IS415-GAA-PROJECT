@@ -10,7 +10,13 @@ website:
       - about.qmd
       - text: "Project"
         href: "project/project.html"
-      
+      - text: "Poster"
+        href: "poster/poster.html"
+      - text: "User Guide"
+        href: "user_guide/user_guide.html"
+      - text: "Minutes of Meeting"
+        href: "meeting/meeting.html"
+    
       
 format:
   html:

@@ -1,0 +1,23 @@
+---
+title: "Project: CrimeWatch - Vietnam Law and Order Geosptial Analysis"
+format:
+  html:
+    code-fold: true
+    code-summary: "Show the code"
+
+execute: 
+  eval: true
+  echo: true
+  warning: false
+date: "`r Sys.Date()`"
+---
+
+```{r}
+#| echo: false
+pacman::p_load(knitr)
+```
+
+```{r}
+#| echo: false
+knitr::include_graphics("img/poster.jpg")
+```

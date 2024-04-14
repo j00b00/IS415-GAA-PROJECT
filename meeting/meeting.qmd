@@ -1,0 +1,33 @@
+---
+title: "Minutes of Meeting CrimeWatch - Vietnam Law and Order Geosptial Analysis"
+format:
+  html:
+    code-fold: true
+    code-summary: "Show the code"
+
+execute: 
+  eval: true
+  echo: true
+  warning: false
+date: "`r Sys.Date()`"
+---
+
+```{r}
+#| echo: false
+pacman::p_load(knitr)
+```
+
+Here, you'll find a comprehensive record of our discussions, decisions, and actions taken during our meetings. This archive serves as a vital tool for maintaining transparency, accountability, and alignment within our team. By revisiting past meetings, we can ensure everyone remains informed, objectives are clear, and progress is tracked effectively. Dive into the details to gain valuable context, understand the evolution of our projects, and stay connected with our collective journey. For consultations with Professor, we will embed them into the weeks' notes.
+
+We aimed to meet every week to ensure that the project team stays consistent throughout the semester.
+
+```{r}
+#| echo: false
+df <- data.frame(
+  Week = c(7,8,9,10,12,13),
+  Members = c("Aloysius, Ebenezer, Jordan"),
+  Minutes = c("<a href='https://docs.google.com/document/d/1_7UnZOaXSPrKv2Oebh5g0i-qi55g8vcg/edit'>Link</a>", "<a href='https://docs.google.com/document/d/1ZKE4Y3dAvtav_LldCkgwGRinXj2sO6tu/edit'>Link</a>", "<a href='https://docs.google.com/document/d/1d3UNsmSc7WmKBkyGQ56YDW-6p4_ZlyNq/edit'>Link</a>", "<a href='https://docs.google.com/document/d/1z1g6Y4eyssmK-b_1v0sltcAQSbjSr_IR/edit'>Link</a>", "<a href='https://docs.google.com/document/d/1GDjpYkL9akEVtkNWGD825DRpI7tW7WkD/edit'>Link</a>", "<a href='https://docs.google.com/document/d/15PbKhEXTjTkVSrovkgptS-SMOMXNWd6E/edit'>Link</a>")
+)
+
+knitr::kable(df, format = "markdown")
+```

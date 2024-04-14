@@ -2,9 +2,9 @@
 title: "About Us"
 ---
 
-# **Crimewatch**
+# **Crimewatch -** Vietnam Law and Order Geosptial Analysis
 
-The Crimewatch roject comprises three individuals from the School of Computing and Information Systems at Singapore Management University, all enrolled in the IS415 Geospatial Analytics and Applications course. Meet our team members below!
+The Crimewatch project comprises three individuals from the School of Computing and Information Systems at Singapore Management University, all enrolled in the IS415 Geospatial Analytics and Applications course. Meet our team members below!
 
 # Aloysius Cedric Tay
 

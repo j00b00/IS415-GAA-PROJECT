@@ -21,22 +21,19 @@ pacman::p_load(knitr)
 
 # 1 ABSTRACT
 
-This project involves 3 main segments, mainly, conducting Exploratory Spatial Data Analysis, Geographical Segmentation with Spatially Constrained Clustering Techniques, and Local Indicators of Spatial association techniques using the Provincial Competitiveness Index of Vietnam. Specifically, we will analyze the “law and order” dataset to reveal preliminary findings, segment the various provinces in Vietnam as well as identify cold and hotspots amongst the province of Vietnam. The goal of the project is to create a web application that aims to aid users in performing exploratory data analysis, hierarchy cluster analysis, spatially constrained clustering, spatially contained clustering, and cold/hotspot analysis.
-The web application users can effortlessly analyze the data by adjusting variable inputs without needing any technical knowledge or expertise in data wrangling, allowing them to make useful insights from their findings
+This project involves 3 main segments, mainly, conducting Exploratory Spatial Data Analysis, Geographical Segmentation with Spatially Constrained Clustering Techniques, and Local Indicators of Spatial association techniques using the Provincial Competitiveness Index of Vietnam. Specifically, we will analyze the “law and order” dataset to reveal preliminary findings, segment the various provinces in Vietnam as well as identify cold and hotspots amongst the province of Vietnam. The goal of the project is to create a web application that aims to aid users in performing exploratory data analysis, hierarchy cluster analysis, spatially constrained clustering, spatially contained clustering, and cold/hotspot analysis. The web application users can effortlessly analyze the data by adjusting variable inputs without needing any technical knowledge or expertise in data wrangling, allowing them to make useful insights from their findings
 
 # 2 Problem & Motivation
 
 The legal system of Vietnam is based on the socialism legal theory and inherited from French civil law system. However, data shows that the enforcement of these laws and regulations can differ depending on the province. This sparked our interest to investigate the reason behind this phenomenon by using clustering methods to visualise patterns within the provinces.
 
-Geospatial analytics in R allows us to manipulate and analyse data visually so that we can uncover patterns that may otherwise go unnoticed. However, geospatial analytics requires users to be experienced and seasoned in finding data on the internet and it can be tedious to wrangle with the data to the right format for processing. This interactive web application allows users to carry out analysis simply through interacting with the user interface so that even business users can operate. By providing an interactive consolidated platform for users to view data and corresponding analyses, we make the data easily accessible while still allowing for customization through the user interface.
-Exploratory Spatial Data Analysis, we can investigate the dataset and summarize their main characteristics. It aims to provide us a sense of how “good” or “bad” our dataset is, allowing us to make more logical conclusions based on the findings.
+Geospatial analytics in R allows us to manipulate and analyse data visually so that we can uncover patterns that may otherwise go unnoticed. However, geospatial analytics requires users to be experienced and seasoned in finding data on the internet and it can be tedious to wrangle with the data to the right format for processing. This interactive web application allows users to carry out analysis simply through interacting with the user interface so that even business users can operate. By providing an interactive consolidated platform for users to view data and corresponding analyses, we make the data easily accessible while still allowing for customization through the user interface. Exploratory Spatial Data Analysis, we can investigate the dataset and summarize their main characteristics. It aims to provide us a sense of how “good” or “bad” our dataset is, allowing us to make more logical conclusions based on the findings.
 
-The Clustering technique is crucial to allow us to realize how similar or dissimilar a group or a point of data is compared to others. This important information can allow users to do audience segmentation.
-Lastly, the cold/hotspot analysis helps to reinforce the findings of the clustering analysis and helps user to better visualize these clusters based on their densities.
+The Clustering technique is crucial to allow us to realize how similar or dissimilar a group or a point of data is compared to others. This important information can allow users to do audience segmentation. Lastly, the cold/hotspot analysis helps to reinforce the findings of the clustering analysis and helps user to better visualize these clusters based on their densities.
 
 # 3 Project Objectives
 
-1.   Interactive user interface design
+1.  Interactive user interface design
 
 2.  Conduct exploratory data analysis using correlation analysis, histograms, boxplots, and box maps for preliminary analysis.
 
@@ -179,7 +176,7 @@ knitr::include_graphics("img/ClustGeo.png")
 knitr::include_graphics("img/clustgeo2.png")
 ```
 
-## 8.2  Finalise Prototype
+## 8.2 Finalise Prototype
 
 ### 8.2.1 EDA Page Histogram
 
