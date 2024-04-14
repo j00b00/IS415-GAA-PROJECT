@@ -1,8 +1,6 @@
 ---
-title: "IS415- CrimeWatch"
+title: "IS415- CrimeWatch - Vietnam Law and Order Geosptial Analysis"
 ---
-
-THEME: GEOGRAPHIC SEGMENTATION
 
 GROUP NO: 2
 

@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2024-04-14">
 
-<title>IS415-GAA-Project - IS415- CrimeWatch - Vietnam Law and Order Geosptial Analysis</title>
+<title>IS415-GAA-Project - User Guide: CrimeWatch - Vietnam Law and Order Geosptial Analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +24,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -61,7 +62,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -71,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">IS415-GAA-Project</span>
     </a>
   </div>
@@ -82,27 +83,27 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
+    <a class="nav-link" href="../about.html" rel="" target="">
  <span class="menu-text">About Us</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./project/project.html" rel="" target="">
+    <a class="nav-link" href="../project/project.html" rel="" target="">
  <span class="menu-text">Project</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./poster/poster.html" rel="" target="">
+    <a class="nav-link" href="../poster/poster.html" rel="" target="">
  <span class="menu-text">Poster</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./user_guide/user_guide.html" rel="" target="">
+    <a class="nav-link active" href="../user_guide/user_guide.html" rel="" target="" aria-current="page">
  <span class="menu-text">User Guide</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./meeting/meeting.html" rel="" target="">
+    <a class="nav-link" href="../meeting/meeting.html" rel="" target="">
  <span class="menu-text">Minutes of Meeting</span></a>
   </li>  
 </ul>
@@ -121,7 +122,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#contents" id="toc-contents" class="nav-link active" data-scroll-target="#contents">CONTENTS</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link active" data-scroll-target="#data">Data</a></li>
+  <li><a href="#eda" id="toc-eda" class="nav-link" data-scroll-target="#eda">EDA</a></li>
+  <li><a href="#esda" id="toc-esda" class="nav-link" data-scroll-target="#esda">ESDA</a></li>
+  <li><a href="#clustering" id="toc-clustering" class="nav-link" data-scroll-target="#clustering">Clustering</a></li>
   </ul>
 </nav>
     </div>
@@ -130,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">IS415- CrimeWatch - Vietnam Law and Order Geosptial Analysis</h1>
+<h1 class="title">User Guide: CrimeWatch - Vietnam Law and Order Geosptial Analysis</h1>
 </div>
 
 
@@ -138,6 +142,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 14, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -145,17 +155,156 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>GROUP NO: 2</p>
-<p>GROUP MEMBERS: ALOYSIUS CEDRIC TAY, EBENEZER HO, JORDAN LEW</p>
-<section id="contents" class="level1">
-<h1>CONTENTS</h1>
+<section id="data" class="level1">
+<h1>Data</h1>
+<p>Data Tab</p>
 <ol type="1">
-<li><p><a href="https://is415-g2-crimewatch.netlify.app/project/project.html/">Project</a></p></li>
-<li><p>Project Poster</p></li>
-<li><p><a href="https://jordanlew.shinyapps.io/IS415-G2-CrimeWatch/">Shiny Application</a></p></li>
-<li><p>User Guide</p></li>
-<li><p>Minutes of Meeting</p></li>
+<li>Users can explore the dataset.</li>
+<li>Users can select the columns or remove the columns at the column’s dropdown menu.</li>
 </ol>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/data.png" class="img-fluid" width="301"></p>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Users can search for the values they want on the search option.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/data1.png" class="img-fluid" width="301"></p>
+</div>
+</div>
+</section>
+<section id="eda" class="level1">
+<h1>EDA</h1>
+<p>EDA Tab</p>
+<p>This tab shows the exploratory data analysis.</p>
+<ul>
+<li><p>Histogram</p>
+<ol type="1">
+<li><p>Users can select the variable they want to show the histogram. It will also display as a percentile Map. (4 variables)</p>
+<p>a. Security</p>
+<p>b. Theft</p>
+<p>c. Police</p>
+<p>d. Gangster</p></li>
+<li><p>Users can select the no. of bins.</p></li>
+</ol></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/histogram.png" class="img-fluid" width="301"></p>
+</div>
+</div>
+<ul>
+<li><p>Boxplot</p>
+<ol type="1">
+<li><p>Users can select the variable they want to show the Box plot. It will also display as a Box Map. ($ variables)</p>
+<p>a. Security</p>
+<p>b. Theft</p>
+<p>c. Police</p>
+<p>d. Gangster</p></li>
+</ol></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/boxplot.png" class="img-fluid" width="301"></p>
+</div>
+</div>
+</section>
+<section id="esda" class="level1">
+<h1>ESDA</h1>
+<p>EDSA Tab</p>
+<p>This tab shows the exploratory spatial data analysis. (Local Indicator of Spatial Association)</p>
+<ol type="1">
+<li><p>Users can select the variables they want to analyze.</p>
+<p>a. Security</p>
+<p>b. Theft</p>
+<p>c. Police</p>
+<p>d. Gangster</p></li>
+<li><p>Users can select the Analysis Method they want. (3 Analysis Method)</p>
+<p>a. Contiguity Queen Method</p>
+<p>b.Contiguity Rook Method</p>
+<p>c. K Nearest Neighbours</p></li>
+<li><p>If K Nearest Neighbours is selected, a slider will appear to allow users to select k.</p></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/esda1.png" class="img-fluid" width="222"></p>
+</div>
+</div>
+<ol start="4" type="1">
+<li><p>Users can select the confidence level for the Contiguity Queen and Contiguity Rook Method. (4 confidence level)</p>
+<p>a. 90%</p>
+<p>b. 95%</p>
+<p>c. 99%</p>
+<p>d. 99.9%</p></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/esda2.png" class="img-fluid" width="301"></p>
+</div>
+</div>
+<p>```</p>
+</section>
+<section id="clustering" class="level1">
+<h1>Clustering</h1>
+<p>Clustering Tab</p>
+<p>This tab shows the different types of clustering segmentation. (Clustering Map and the Dendogram)</p>
+<ul>
+<li><p>Correlation Analysis</p>
+<ol type="1">
+<li><p>Users can remove or add variables to see the correlation. (4 variables)</p>
+<p>a. Security</p>
+<p>b. Theft</p>
+<p>c. Police</p>
+<p>d. Gangster ::: {.cell} ::: {.cell-output-display} <img src="img/clustering1.png" class="img-fluid" width="301"> ::: :::</p></li>
+</ol></li>
+</ul>
+<p>Clustering</p>
+<ol type="1">
+<li><p>Users can remove or add variables to see the correlation. (4 variables)</p>
+<p>a. Security</p>
+<p>b. Theft</p>
+<p>c. Police</p>
+<p>d. Gangster</p></li>
+<li><p>Users can select the cluster size. (There are suggested cluster sizes for the user to select)</p></li>
+<li><p>Users can select the different Clustering Methods to use. (3 clustering method)</p></li>
+</ol>
+<pre><code>a\. Hierarchical Clustering
+
+b\. ClustGEO
+
+c\. SKATER</code></pre>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/clustering2.png" class="img-fluid" width="301"></p>
+</div>
+</div>
+<ol start="4" type="1">
+<li>If Hierarchical Clustering is selected, the Agglomeration Method and checkbox for suggestions of Agglomeration Method will be displayed.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/clustering3.png" class="img-fluid" width="142"></p>
+</div>
+</div>
+<ol start="5" type="1">
+<li>If ClustGEO Method is selected, users can use the mix factor slider to select the mix factor. There is also a checkbox to show the suggested mixed factor.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/clustering4.png" class="img-fluid" width="136"></p>
+</div>
+</div>
+<ol start="6" type="1">
+<li>If SAKTER Method is selected, users can select the distance method to use.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/clustering5.png" class="img-fluid" width="144"></p>
+</div>
+</div>
 
 
 </section>

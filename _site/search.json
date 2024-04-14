@@ -100,9 +100,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "IS415- CrimeWatch",
+    "title": "IS415- CrimeWatch - Vietnam Law and Order Geosptial Analysis",
     "section": "",
-    "text": "THEME: GEOGRAPHIC SEGMENTATION\nGROUP NO: 2\nGROUP MEMBERS: ALOYSIUS CEDRIC TAY, EBENEZER HO, JORDAN LEW\n\nCONTENTS\n\nProject\nProject Poster\nShiny Application\nUser Guide\nMeeting of Meeting"
+    "text": "GROUP NO: 2\nGROUP MEMBERS: ALOYSIUS CEDRIC TAY, EBENEZER HO, JORDAN LEW\n\nCONTENTS\n\nProject\nProject Poster\nShiny Application\nUser Guide\nMinutes of Meeting"
   },
   {
     "objectID": "proposal/project_proposal.html#exploratory-spatial-data-analysis",
@@ -236,5 +236,12 @@
     "title": "Minutes of Meeting CrimeWatch - Vietnam Law and Order Geosptial Analysis",
     "section": "",
     "text": "Here, you’ll find a comprehensive record of our discussions, decisions, and actions taken during our meetings. This archive serves as a vital tool for maintaining transparency, accountability, and alignment within our team. By revisiting past meetings, we can ensure everyone remains informed, objectives are clear, and progress is tracked effectively. Dive into the details to gain valuable context, understand the evolution of our projects, and stay connected with our collective journey. For consultations with Professor, we will embed them into the weeks’ notes.\nWe aimed to meet every week to ensure that the project team stays consistent throughout the semester.\n\n\n\n\n\n\n\n\n\n\nWeek\nMembers\nMinutes\n\n\n\n\n7\nAloysius, Ebenezer, Jordan\nLink\n\n\n8\nAloysius, Ebenezer, Jordan\nLink\n\n\n9\nAloysius, Ebenezer, Jordan\nLink\n\n\n10\nAloysius, Ebenezer, Jordan\nLink\n\n\n12\nAloysius, Ebenezer, Jordan\nLink\n\n\n13\nAloysius, Ebenezer, Jordan\nLink"
+  },
+  {
+    "objectID": "user_guide/user_guide.html",
+    "href": "user_guide/user_guide.html",
+    "title": "User Guide: CrimeWatch - Vietnam Law and Order Geosptial Analysis",
+    "section": "",
+    "text": "Data\nData Tab\n\nUsers can explore the dataset.\nUsers can select the columns or remove the columns at the column’s dropdown menu.\n\n\n\n\n\n\n\nUsers can search for the values they want on the search option.\n\n\n\n\n\n\n\n\nEDA\nEDA Tab\nThis tab shows the exploratory data analysis.\n\nHistogram\n\nUsers can select the variable they want to show the histogram. It will also display as a percentile Map. (4 variables)\na. Security\nb. Theft\nc. Police\nd. Gangster\nUsers can select the no. of bins.\n\n\n\n\n\n\n\n\nBoxplot\n\nUsers can select the variable they want to show the Box plot. It will also display as a Box Map. ($ variables)\na. Security\nb. Theft\nc. Police\nd. Gangster\n\n\n\n\n\n\n\n\n\nESDA\nEDSA Tab\nThis tab shows the exploratory spatial data analysis. (Local Indicator of Spatial Association)\n\nUsers can select the variables they want to analyze.\na. Security\nb. Theft\nc. Police\nd. Gangster\nUsers can select the Analysis Method they want. (3 Analysis Method)\na. Contiguity Queen Method\nb.Contiguity Rook Method\nc. K Nearest Neighbours\nIf K Nearest Neighbours is selected, a slider will appear to allow users to select k.\n\n\n\n\n\n\n\nUsers can select the confidence level for the Contiguity Queen and Contiguity Rook Method. (4 confidence level)\na. 90%\nb. 95%\nc. 99%\nd. 99.9%\n\n\n\n\n\n\n```\n\n\nClustering\nClustering Tab\nThis tab shows the different types of clustering segmentation. (Clustering Map and the Dendogram)\n\nCorrelation Analysis\n\nUsers can remove or add variables to see the correlation. (4 variables)\na. Security\nb. Theft\nc. Police\nd. Gangster ::: {.cell} ::: {.cell-output-display}  ::: :::\n\n\nClustering\n\nUsers can remove or add variables to see the correlation. (4 variables)\na. Security\nb. Theft\nc. Police\nd. Gangster\nUsers can select the cluster size. (There are suggested cluster sizes for the user to select)\nUsers can select the different Clustering Methods to use. (3 clustering method)\n\na\\. Hierarchical Clustering\n\nb\\. ClustGEO\n\nc\\. SKATER\n\n\n\n\n\n\nIf Hierarchical Clustering is selected, the Agglomeration Method and checkbox for suggestions of Agglomeration Method will be displayed.\n\n\n\n\n\n\n\nIf ClustGEO Method is selected, users can use the mix factor slider to select the mix factor. There is also a checkbox to show the suggested mixed factor.\n\n\n\n\n\n\n\nIf SAKTER Method is selected, users can select the distance method to use."
   }
 ]

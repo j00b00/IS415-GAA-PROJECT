@@ -1,0 +1,200 @@
+---
+title: "User Guide: CrimeWatch - Vietnam Law and Order Geosptial Analysis"
+format:
+  html:
+    code-fold: true
+    code-summary: "Show the code"
+
+execute: 
+  eval: true
+  echo: true
+  warning: false
+date: "`r Sys.Date()`"
+---
+
+```{r}
+#| echo: false
+pacman::p_load(knitr)
+```
+
+# Data
+
+Data Tab
+
+1.  Users can explore the dataset.
+2.  Users can select the columns or remove the columns at the column’s dropdown menu.
+
+```{r}
+#| echo: false
+knitr::include_graphics("img/data.png")
+```
+
+3.  Users can search for the values they want on the search option.
+
+```{r}
+#| echo: false
+knitr::include_graphics("img/data1.png")
+```
+
+# EDA
+
+EDA Tab
+
+This tab shows the exploratory data analysis.
+
+-   Histogram
+
+    1.  Users can select the variable they want to show the histogram. It will also display as a percentile Map. (4 variables)
+
+        a\. Security
+
+        b\. Theft
+
+        c\. Police
+
+        d\. Gangster
+
+    2.  Users can select the no. of bins.
+
+    ```{r}
+    #| echo: false
+    knitr::include_graphics("img/histogram.png")
+    ```
+
+-   Boxplot
+
+    1.  Users can select the variable they want to show the Box plot. It will also display as a Box Map. (\$ variables)
+
+        a\. Security
+
+        b\. Theft
+
+        c\. Police
+
+        d\. Gangster
+
+        ```{r}
+        #| echo: false
+        knitr::include_graphics("img/boxplot.png")
+        ```
+
+        # ESDA
+
+EDSA Tab
+
+This tab shows the exploratory spatial data analysis. (Local Indicator of Spatial Association)
+
+1.  Users can select the variables they want to analyze.
+
+    a\. Security
+
+    b\. Theft
+
+    c\. Police
+
+    d\. Gangster
+
+2.  Users can select the Analysis Method they want. (3 Analysis Method)
+
+    a\. Contiguity Queen Method
+
+    b.Contiguity Rook Method
+
+    c\. K Nearest Neighbours
+
+3.  If K Nearest Neighbours is selected, a slider will appear to allow users to select k.
+
+```{r}
+#| echo: false
+knitr::include_graphics("img/esda1.png")
+```
+
+4.  Users can select the confidence level for the Contiguity Queen and Contiguity Rook Method. (4 confidence level)
+
+    a\. 90%
+
+    b\. 95%
+
+    c\. 99%
+
+    d\. 99.9%
+
+    ```{r}
+    #| echo: false
+    knitr::include_graphics("img/esda2.png")
+    ```
+
+    \`\`\`
+
+# Clustering
+
+Clustering Tab
+
+This tab shows the different types of clustering segmentation. (Clustering Map and the Dendogram)
+
+-   Correlation Analysis
+
+    1.  Users can remove or add variables to see the correlation. (4 variables)
+
+        a\. Security
+
+        b\. Theft
+
+        c\. Police
+
+        d\. Gangster
+
+        ```{r}
+        #| echo: false
+        knitr::include_graphics("img/clustering1.png")
+        ```
+
+Clustering
+
+1.  Users can remove or add variables to see the correlation. (4 variables)
+
+    a\. Security
+
+    b\. Theft
+
+    c\. Police
+
+    d\. Gangster
+
+2.  Users can select the cluster size. (There are suggested cluster sizes for the user to select)
+
+3.  Users can select the different Clustering Methods to use. (3 clustering method)
+
+```         
+a\. Hierarchical Clustering
+
+b\. ClustGEO
+
+c\. SKATER
+```
+
+```{r}
+#| echo: false
+knitr::include_graphics("img/clustering2.png")
+```
+
+4.  If Hierarchical Clustering is selected, the Agglomeration Method and checkbox for suggestions of Agglomeration Method will be displayed.
+
+```{r}
+#| echo: false
+knitr::include_graphics("img/clustering3.png")
+```
+
+5.  If ClustGEO Method is selected, users can use the mix factor slider to select the mix factor. There is also a checkbox to show the suggested mixed factor.
+
+```{r}
+#| echo: false
+knitr::include_graphics("img/clustering4.png")
+```
+
+6.  If SAKTER Method is selected, users can select the distance method to use.
+
+```{r}
+#| echo: false
+knitr::include_graphics("img/clustering5.png")
+```
