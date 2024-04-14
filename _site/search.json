@@ -1,101 +1,10 @@
 [
   {
-    "objectID": "proposal/project_proposal.html#title-delineating-social-area-analysis-using-geographic-segmentation-approach",
-    "href": "proposal/project_proposal.html#title-delineating-social-area-analysis-using-geographic-segmentation-approach",
-    "title": "Project Proposal: CrimeWatch",
-    "section": "Title: Delineating Social Area Analysis using Geographic Segmentation Approach",
-    "text": "Title: Delineating Social Area Analysis using Geographic Segmentation Approach\nSource: https://rpubs.com/YuMengTing/618944\nSummary: Social area analysis (SAA), which is a generic name for a number of methods employing census and other data to classify small areas into similar socioeconomic groups, is an approach which quantifies data in a useful fashion and has important applications in regional development, urban planning, medical and health services research. The potentialities of the approach for Liveable City planning and Smart City preparedness, however, have yet to be explored.\n\n\n\n\n\nLearning points: The initial stages of data preparation have to be done very meticulously as we want to avoid misrepresentation. For skater analysis, when plotting spatially constrained clusters (Figure 1), it will be better to accompany it with a choropleth map to aid visualization of clusters."
-  },
-  {
-    "objectID": "proposal/project_proposal.html#title-an-r-package-for-hierarchical-clustering-with-spatial-constraints",
-    "href": "proposal/project_proposal.html#title-an-r-package-for-hierarchical-clustering-with-spatial-constraints",
-    "title": "Project Proposal: CrimeWatch",
-    "section": "Title: An R package for hierarchical clustering with spatial constraints",
-    "text": "Title: An R package for hierarchical clustering with spatial constraints\nSource: https://arxiv.org/pdf/1707.03897.pdf\nSummary: In this paper, the authors propose a ward-like hierarchical clustering algorithm including spatial constraints. The dissimilarities can be non-euclidean and the weights of the observations can be non uniform.\nLearning points: When trying to carry out Hierarchical clustering, we need to have a dissimilarity matrix D of class dist. It is important for us to alter or transform our matrix to an appropriate data type for the function to work properly. The highlight of the paper is the calculation and algorithms used to do clustering."
-  },
-  {
-    "objectID": "proposal/project_proposal.html#title-cluster-analysis-and-segmentation",
-    "href": "proposal/project_proposal.html#title-cluster-analysis-and-segmentation",
-    "title": "Project Proposal: CrimeWatch",
-    "section": "Title: Cluster Analysis and Segmentation",
-    "text": "Title: Cluster Analysis and Segmentation\nSource: https://inseaddataanalytics.github.io/INSEADAnalytics/\nCourseSessions/Sessions45/ClusterAnalysisReading.html#step_8:_robustness_analysis\nSummary: In Data Analytics we often have very large data (many observations - “rows in a flat file”), which are however similar to each other hence we may want to organize them in a few clusters with similar observations within each cluster. For example, in the case of customer data, even though we may have data from millions of customers, these customers may only belong to a few segments: customers are similar within each segment but different across segments. We may often want to analyze each segment separately, as they may behave differently.\nLearning points: Much like any data analysis, segmentation is an iterative process with many variations of data, methods, number of clusters, and profiles generated until a satisfying solution is reached. The paper discusses examples on how to test the statistical robustness and stability of interpretation of clusters found using 2 different approaches."
-  },
-  {
-    "objectID": "proposal/project_proposal.html#data-preparation",
-    "href": "proposal/project_proposal.html#data-preparation",
-    "title": "Project Proposal: CrimeWatch",
-    "section": "7.1 Data Preparation",
-    "text": "7.1 Data Preparation\n\nData sources from online platforms\nImporting spatial data into the R environment\nData wrangling"
-  },
-  {
-    "objectID": "proposal/project_proposal.html#exploratory-data-analysis",
-    "href": "proposal/project_proposal.html#exploratory-data-analysis",
-    "title": "Project Proposal: CrimeWatch",
-    "section": "7.2 Exploratory Data Analysis",
-    "text": "7.2 Exploratory Data Analysis\n\nPlotting up graphs for visualization and better understanding of the data\n\nHistogram - Visualize the distribution of data by bins each representing a range of data values\nPercentile Map - A quantile map to visualize the distribution of data on a map\nBox-plot - Visualize the distribution of data by graphically depicting groups of data through their quartiles\nBox Map - An augmented quantile map with an additional lower and upper category to visualize the distribution of the data on a map"
-  },
-  {
-    "objectID": "proposal/project_proposal.html#hierarchy-cluster-analysis---jordan",
-    "href": "proposal/project_proposal.html#hierarchy-cluster-analysis---jordan",
-    "title": "Project Proposal: Places of Worship",
-    "section": "7.3 Hierarchy Cluster Analysis - Jordan",
-    "text": "7.3 Hierarchy Cluster Analysis - Jordan\n\nData Standardization (if necessary)\nGenerate Cluster Dendrogram\nGap Statistic Method\nGenerate cluster heatmap"
-  },
-  {
-    "objectID": "proposal/project_proposal.html#spatially-constrained-clustering-skater-approach---ebenezer",
-    "href": "proposal/project_proposal.html#spatially-constrained-clustering-skater-approach---ebenezer",
-    "title": "Project Proposal: Places of Worship",
-    "section": "7.4 Spatially Constrained Clustering: SKATER approach - Ebenezer",
-    "text": "7.4 Spatially Constrained Clustering: SKATER approach - Ebenezer\n\nGetting the Neighbor List\nCompute minimum spanning tree\nGenerate neighbors map"
-  },
-  {
-    "objectID": "proposal/project_proposal.html#spatially-constrained-clustering-clustgeo-method---aloysius",
-    "href": "proposal/project_proposal.html#spatially-constrained-clustering-clustgeo-method---aloysius",
-    "title": "Project Proposal: Places of Worship",
-    "section": "7.5 Spatially Constrained Clustering: CLUSTGEO method - Aloysius",
-    "text": "7.5 Spatially Constrained Clustering: CLUSTGEO method - Aloysius\n\nGenerate Ward-like hierarchical clustering\nGenerate Choropleth Map"
-  },
-  {
-    "objectID": "proposal/project_proposal.html#about-page",
-    "href": "proposal/project_proposal.html#about-page",
-    "title": "Project Proposal: Places of Worship",
-    "section": "8.1 About Page",
-    "text": "8.1 About Page"
-  },
-  {
-    "objectID": "proposal/project_proposal.html#eda-page",
-    "href": "proposal/project_proposal.html#eda-page",
-    "title": "Project Proposal: Places of Worship",
-    "section": "8.2 EDA Page",
-    "text": "8.2 EDA Page"
-  },
-  {
-    "objectID": "proposal/project_proposal.html#hierarchy-clustering-page",
-    "href": "proposal/project_proposal.html#hierarchy-clustering-page",
-    "title": "Project Proposal: Places of Worship",
-    "section": "8.3 Hierarchy Clustering Page",
-    "text": "8.3 Hierarchy Clustering Page"
-  },
-  {
-    "objectID": "proposal/project_proposal.html#spatially-constrained-clustering-skater-approach-page",
-    "href": "proposal/project_proposal.html#spatially-constrained-clustering-skater-approach-page",
-    "title": "Project Proposal: Places of Worship",
-    "section": "8.4 Spatially Constrained Clustering: SKATER approach Page",
-    "text": "8.4 Spatially Constrained Clustering: SKATER approach Page"
-  },
-  {
-    "objectID": "proposal/project_proposal.html#spatially-constrained-clustering-clustgeo-method-page",
-    "href": "proposal/project_proposal.html#spatially-constrained-clustering-clustgeo-method-page",
-    "title": "Project Proposal: Places of Worship",
-    "section": "8.5 Spatially Constrained Clustering: ClustGeo Method Page",
-    "text": "8.5 Spatially Constrained Clustering: ClustGeo Method Page"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About Us",
+    "objectID": "user_guide/user_guide.html",
+    "href": "user_guide/user_guide.html",
+    "title": "User Guide: CrimeWatch - Vietnam Law and Order Geosptial Analysis",
     "section": "",
-    "text": "Crimewatch - Vietnam Law and Order Geosptial Analysis\nThe Crimewatch project comprises three individuals from the School of Computing and Information Systems at Singapore Management University, all enrolled in the IS415 Geospatial Analytics and Applications course. Meet our team members below!\n\n\nAloysius Cedric Tay\nLinkedIn\n\n\nEbenezer Ho\nLinkedIn\n\n\nJordan Lew\nLinkedIn"
+    "text": "Data\nData Tab\n\nUsers can explore the dataset.\nUsers can select the columns or remove the columns at the column’s dropdown menu.\n\n\n\n\n\n\n\nUsers can search for the values they want on the search option.\n\n\n\n\n\n\n\n\nEDA\nEDA Tab\nThis tab shows the exploratory data analysis.\n\nHistogram\n\nUsers can select the variable they want to show the histogram. It will also display as a percentile Map. (4 variables)\na. Security\nb. Theft\nc. Police\nd. Gangster\nUsers can select the no. of bins.\n\n\n\n\n\n\nBoxplot\n\nUsers can select the variable they want to show the Box plot. It will also display as a Box Map. ($ variables)\na. Security\nb. Theft\nc. Police\nd. Gangster\n\n\n\n\n\n\n\n\n\nESDA\nEDSA Tab\nThis tab shows the exploratory spatial data analysis. (Local Indicator of Spatial Association)\n\nUsers can select the variables they want to analyze.\na. Security\nb. Theft\nc. Police\nd. Gangster\nUsers can select the Analysis Method they want. (3 Analysis Method)\na. Contiguity Queen Method\nb.Contiguity Rook Method\nc. K Nearest Neighbours\nIf K Nearest Neighbours is selected, a slider will appear to allow users to select k.\n\n\n\n\n\n\n\nUsers can select the confidence level for the Contiguity Queen and Contiguity Rook Method. (4 confidence level)\na. 90%\nb. 95%\nc. 99%\nd. 99.9%\n\n\n\n\n\n```\n\n\n\nClustering\nClustering Tab\nThis tab shows the different types of clustering segmentation. (Clustering Map and the Dendogram)\n\nCorrelation Analysis\n\nUsers can remove or add variables to see the correlation. (4 variables)\na. Security\nb. Theft\nc. Police\nd. Gangster\n\n\n\n\n\n\n\n\nClustering\n\n\nUsers can remove or add variables to see the correlation. (4 variables)\na. Security\nb. Theft\nc. Police\nd. Gangster\nUsers can select the cluster size. (There are suggested cluster sizes for the user to select)\nUsers can select the different Clustering Methods to use. (3 clustering method)\na. Hierarchical Clustering\nb. ClustGEO\nc. SKATER\n\n\n\n\n\n\n\nIf Hierarchical Clustering is selected, the Agglomeration Method and checkbox for suggestions of Agglomeration Method will be displayed.\n\n\n\n\n\n\n\nIf ClustGEO Method is selected, users can use the mix factor slider to select the mix factor. There is also a checkbox to show the suggested mixed factor.\n\n\n\n\n\n\n\nIf SAKTER Method is selected, users can select the distance method to use."
   },
   {
     "objectID": "index.html",
@@ -105,46 +14,18 @@
     "text": "GROUP NO: 2\nGROUP MEMBERS: ALOYSIUS CEDRIC TAY, EBENEZER HO, JORDAN LEW\n\nCONTENTS\n\nProject\nProject Poster\nShiny Application\nUser Guide\nMinutes of Meeting"
   },
   {
-    "objectID": "proposal/project_proposal.html#exploratory-spatial-data-analysis",
-    "href": "proposal/project_proposal.html#exploratory-spatial-data-analysis",
-    "title": "Project Proposal: CrimeWatch",
-    "section": "7.3 Exploratory Spatial Data Analysis",
-    "text": "7.3 Exploratory Spatial Data Analysis\n\nVisualize spatial data and examine the spatial distribution of data points\n\nLISA - Identify spatial clusters or patterns of similarity and dissimilarity"
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Us",
+    "section": "",
+    "text": "Crimewatch - Vietnam Law and Order Geosptial Analysis\nThe Crimewatch project comprises three individuals from the School of Computing and Information Systems at Singapore Management University, all enrolled in the IS415 Geospatial Analytics and Applications course. Meet our team members below!\n\n\nAloysius Cedric Tay\nLinkedIn\n\n\nEbenezer Ho\nLinkedIn\n\n\nJordan Lew\nLinkedIn"
   },
   {
-    "objectID": "proposal/project_proposal.html#geographical-segmentation-with-spatially-constrained-cluster-analysis",
-    "href": "proposal/project_proposal.html#geographical-segmentation-with-spatially-constrained-cluster-analysis",
-    "title": "Project Proposal: CrimeWatch",
-    "section": "7.4 Geographical Segmentation with Spatially Constrained Cluster Analysis",
-    "text": "7.4 Geographical Segmentation with Spatially Constrained Cluster Analysis\n\nDivide a target market by location to allow marketers to better serve customers in a particular area\n\nHierarchy Cluster Analysis - Classify objects into clusters based on similarity or dissimilarity.\nSpatially Constrained Clustering: SKATER approach - Uses spatial proximity to identify spatial patterns\nSpatially Constrained Clustering: CLUSTGEO method - Partition spatial data into cluster base on attribute similarity and spatial contiguity."
-  },
-  {
-    "objectID": "proposal/project_proposal.html#eda-page-histogram",
-    "href": "proposal/project_proposal.html#eda-page-histogram",
-    "title": "Project Proposal: CrimeWatch",
-    "section": "8.1 EDA Page Histogram",
-    "text": "8.1 EDA Page Histogram"
-  },
-  {
-    "objectID": "proposal/project_proposal.html#eda-page-box-plot",
-    "href": "proposal/project_proposal.html#eda-page-box-plot",
-    "title": "Project Proposal: CrimeWatch",
-    "section": "8.2 EDA Page Box Plot",
-    "text": "8.2 EDA Page Box Plot"
-  },
-  {
-    "objectID": "proposal/project_proposal.html#esda",
-    "href": "proposal/project_proposal.html#esda",
-    "title": "Project Proposal: CrimeWatch",
-    "section": "8.3 ESDA",
-    "text": "8.3 ESDA"
-  },
-  {
-    "objectID": "proposal/project_proposal.html#clustering",
-    "href": "proposal/project_proposal.html#clustering",
-    "title": "Project Proposal: CrimeWatch",
-    "section": "8.4 Clustering",
-    "text": "8.4 Clustering"
+    "objectID": "meeting/meeting.html",
+    "href": "meeting/meeting.html",
+    "title": "Minutes of Meeting CrimeWatch - Vietnam Law and Order Geosptial Analysis",
+    "section": "",
+    "text": "Here, you’ll find a comprehensive record of our discussions, decisions, and actions taken during our meetings. This archive serves as a vital tool for maintaining transparency, accountability, and alignment within our team. By revisiting past meetings, we can ensure everyone remains informed, objectives are clear, and progress is tracked effectively. Dive into the details to gain valuable context, understand the evolution of our projects, and stay connected with our collective journey. For consultations with Professor, we will embed them into the weeks’ notes.\nWe aimed to meet every week to ensure that the project team stays consistent throughout the semester.\n\n\n\n\n\n\n\n\n\n\nWeek\nMembers\nMinutes\n\n\n\n\n7\nAloysius, Ebenezer, Jordan\nLink\n\n\n8\nAloysius, Ebenezer, Jordan\nLink\n\n\n9\nAloysius, Ebenezer, Jordan\nLink\n\n\n10\nAloysius, Ebenezer, Jordan\nLink\n\n\n12\nAloysius, Ebenezer, Jordan\nLink\n\n\n13\nAloysius, Ebenezer, Jordan\nLink"
   },
   {
     "objectID": "project/project.html#title-delineating-social-area-analysis-using-geographic-segmentation-approach",
@@ -196,52 +77,10 @@
     "text": "7.4 Geographical Segmentation with Spatially Constrained Cluster Analysis\n\nDivide a target market by location to allow marketers to better serve customers in a particular area\n\nHierarchy Cluster Analysis - Classify objects into clusters based on similarity or dissimilarity.\nSpatially Constrained Clustering: SKATER approach - Uses spatial proximity to identify spatial patterns\nSpatially Constrained Clustering: CLUSTGEO method - Partition spatial data into cluster base on attribute similarity and spatial contiguity."
   },
   {
-    "objectID": "project/project.html#eda-page-histogram",
-    "href": "project/project.html#eda-page-histogram",
-    "title": "Project: CrimeWatch Vietnam Law and Order Geosptial Analysis",
-    "section": "8.1 EDA Page Histogram",
-    "text": "8.1 EDA Page Histogram"
-  },
-  {
-    "objectID": "project/project.html#eda-page-box-plot",
-    "href": "project/project.html#eda-page-box-plot",
-    "title": "Project: CrimeWatch Vietnam Law and Order Geosptial Analysis",
-    "section": "8.2 EDA Page Box Plot",
-    "text": "8.2 EDA Page Box Plot"
-  },
-  {
-    "objectID": "project/project.html#esda",
-    "href": "project/project.html#esda",
-    "title": "Project: CrimeWatch Vietnam Law and Order Geosptial Analysis",
-    "section": "8.3 ESDA",
-    "text": "8.3 ESDA"
-  },
-  {
-    "objectID": "project/project.html#clustering",
-    "href": "project/project.html#clustering",
-    "title": "Project: CrimeWatch Vietnam Law and Order Geosptial Analysis",
-    "section": "8.4 Clustering",
-    "text": "8.4 Clustering"
-  },
-  {
     "objectID": "project/project.html#finalise-prototype",
     "href": "project/project.html#finalise-prototype",
     "title": "Project: CrimeWatch - Vietnam Law and Order Geosptial Analysis",
     "section": "8.2 Finalise Prototype",
     "text": "8.2 Finalise Prototype\n\n8.2.1 EDA Page Histogram\n\n\n\n\n\n\n\n8.2.2 EDA Page Box Plot\n\n\n\n\n\n\n\n8.2.3 ESDA\n\n\n\n\n\n\n\n8.2.4 Clustering"
-  },
-  {
-    "objectID": "meeting/meeting.html",
-    "href": "meeting/meeting.html",
-    "title": "Minutes of Meeting CrimeWatch - Vietnam Law and Order Geosptial Analysis",
-    "section": "",
-    "text": "Here, you’ll find a comprehensive record of our discussions, decisions, and actions taken during our meetings. This archive serves as a vital tool for maintaining transparency, accountability, and alignment within our team. By revisiting past meetings, we can ensure everyone remains informed, objectives are clear, and progress is tracked effectively. Dive into the details to gain valuable context, understand the evolution of our projects, and stay connected with our collective journey. For consultations with Professor, we will embed them into the weeks’ notes.\nWe aimed to meet every week to ensure that the project team stays consistent throughout the semester.\n\n\n\n\n\n\n\n\n\n\nWeek\nMembers\nMinutes\n\n\n\n\n7\nAloysius, Ebenezer, Jordan\nLink\n\n\n8\nAloysius, Ebenezer, Jordan\nLink\n\n\n9\nAloysius, Ebenezer, Jordan\nLink\n\n\n10\nAloysius, Ebenezer, Jordan\nLink\n\n\n12\nAloysius, Ebenezer, Jordan\nLink\n\n\n13\nAloysius, Ebenezer, Jordan\nLink"
-  },
-  {
-    "objectID": "user_guide/user_guide.html",
-    "href": "user_guide/user_guide.html",
-    "title": "User Guide: CrimeWatch - Vietnam Law and Order Geosptial Analysis",
-    "section": "",
-    "text": "Data\nData Tab\n\nUsers can explore the dataset.\nUsers can select the columns or remove the columns at the column’s dropdown menu.\n\n\n\n\n\n\n\nUsers can search for the values they want on the search option.\n\n\n\n\n\n\n\n\nEDA\nEDA Tab\nThis tab shows the exploratory data analysis.\n\nHistogram\n\nUsers can select the variable they want to show the histogram. It will also display as a percentile Map. (4 variables)\na. Security\nb. Theft\nc. Police\nd. Gangster\nUsers can select the no. of bins.\n\n\n\n\n\n\nBoxplot\n\nUsers can select the variable they want to show the Box plot. It will also display as a Box Map. ($ variables)\na. Security\nb. Theft\nc. Police\nd. Gangster\n\n\n\n\n\n\n\n\n\nESDA\nEDSA Tab\nThis tab shows the exploratory spatial data analysis. (Local Indicator of Spatial Association)\n\nUsers can select the variables they want to analyze.\na. Security\nb. Theft\nc. Police\nd. Gangster\nUsers can select the Analysis Method they want. (3 Analysis Method)\na. Contiguity Queen Method\nb.Contiguity Rook Method\nc. K Nearest Neighbours\nIf K Nearest Neighbours is selected, a slider will appear to allow users to select k.\n\n\n\n\n\n\n\nUsers can select the confidence level for the Contiguity Queen and Contiguity Rook Method. (4 confidence level)\na. 90%\nb. 95%\nc. 99%\nd. 99.9%\n\n\n\n\n\n```\n\n\n\nClustering\nClustering Tab\nThis tab shows the different types of clustering segmentation. (Clustering Map and the Dendogram)\n\nCorrelation Analysis\n\nUsers can remove or add variables to see the correlation. (4 variables)\na. Security\nb. Theft\nc. Police\nd. Gangster\n\n\n\n\n\n\n\n\nClustering\n\n\nUsers can remove or add variables to see the correlation. (4 variables)\na. Security\nb. Theft\nc. Police\nd. Gangster\nUsers can select the cluster size. (There are suggested cluster sizes for the user to select)\nUsers can select the different Clustering Methods to use. (3 clustering method)\na. Hierarchical Clustering\nb. ClustGEO\nc. SKATER\n\n\n\n\n\n\n\nIf Hierarchical Clustering is selected, the Agglomeration Method and checkbox for suggestions of Agglomeration Method will be displayed.\n\n\n\n\n\n\n\nIf ClustGEO Method is selected, users can use the mix factor slider to select the mix factor. There is also a checkbox to show the suggested mixed factor.\n\n\n\n\n\n\n\nIf SAKTER Method is selected, users can select the distance method to use."
   }
 ]
