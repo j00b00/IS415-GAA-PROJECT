@@ -20,7 +20,7 @@ varMeasure1 <- c(
 
 
 ui <- fluidPage(
-  column(width = 1, 
+  column(width = 2, 
          a(href = "https://i.postimg.cc/nVd0Ymhx/transparent-bg.png", 
            img(src = "https://i.postimg.cc/nVd0Ymhx/transparent-bg.png", height = "40px"))),
   useWaiter(),
@@ -51,7 +51,7 @@ ui <- fluidPage(
                 navbarPage("CrimeWatch", id = "navbar",
                            fluid = TRUE, 
                            windowTitle = "CrimeWatch: Vietnam Law and Order Geo-Spatial Analysis",
-                           selected="clustering",
+                           selected="eda",
 
                            
                            #Data Panel
@@ -137,7 +137,8 @@ ui <- fluidPage(
                                                                )
                                     )
                            ),
-
+                           
+                           
 
 
                            #ESDA Panel
@@ -185,6 +186,9 @@ ui <- fluidPage(
                                                     leafletOutput("lisa"),
                                                     ))),
                                     ),
+                           
+                        
+                           
 
                            #Cluster Panel
                            tabPanel("Clustering", value="clustering", fluid=TRUE, icon=icon("globe-asia"),
@@ -292,184 +296,107 @@ server <- function(input, output, session){
     DT::datatable(DF[, input$inDataSelect, drop = FALSE], style="bootstrap")
     
   })
-  # 
-  # # EDA Function
-  # output$percentileMap <- renderLeaflet({
-  #   waiter_show(html = spin_fading_circles())
-  #   get.var <- function(vname, df) {
-  #     v <- df[vname] %>%
-  #       st_set_geometry(NULL)
-  #     v <- unname(v[,1])
-  #     return(v)
-  #   }
-  # 
-  #   percentile <- c(0, 0.01, 0.1, 0.5, 0.9, 0.99, 1)
-  # 
-  #   var <- get.var(input$varMeasure1, combined_data)
-  #   bperc <- quantile(var, percentile)
-  # 
-  #   pmap <- tm_shape(combined_data) +
-  #     tm_polygons() +
-  #     tm_shape(combined_data) +
-  #     tm_fill(input$varMeasure1,
-  #             breaks=bperc,
-  #             palette="Blues",
-  #             labels=c("< 1%", "1% - 10%", "10% - 50%", "50% - 90%", "90% - 99%", "> 99%")) +
-  #     tm_borders() +
-  #     tm_layout(main.title = "Percentile Map", title.position = c("right", "bottom"))
-  # 
-  #   tmap_leaflet(pmap, in.shiny=TRUE)
-  # 
-  # })
-  # 
-  # output$eda1 <- renderPlot({
-  #   hist(combined_data_sp[[input$varMeasure1]],
-  #        main = paste("Histogram of", input$varMeasure1),
-  #        xlab = input$varMeasure1,
-  #        col = "grey",
-  #        breaks = input$bins)
-  #   waiter_hide()
-  # })
-  # 
-  # output$BoxMap <- renderLeaflet({
-  #   # waiter_show(html = spin_fading_circles())
-  #   boxbreaks <- function(v,mult=1.5) {
-  #     qv <- unname(quantile(v))
-  #     iqr <- qv[4] - qv[2]
-  #     upfence <- qv[4] + mult * iqr
-  #     lofence <- qv[2] - mult * iqr
-  #     bb <- vector(mode="numeric",length=7)
-  #     if (lofence < qv[1]) {
-  #       bb[1] <- lofence
-  #       bb[2] <- floor(qv[1])
-  #     } else {
-  #       bb[2] <- lofence
-  #       bb[1] <- qv[1]
-  #     }
-  #     if (upfence > qv[5]) {
-  #       bb[7] <- upfence
-  #       bb[6] <- ceiling(qv[5])
-  #     } else {
-  #       bb[6] <- upfence
-  #       bb[7] <- qv[5]
-  #     }
-  #     bb[3:5] <- qv[2:4]
-  #     return(bb)
-  #   }
-  # 
-  #   get.var <- function(vname, df) {
-  #     v <- df[vname] %>%
-  #       st_set_geometry(NULL)
-  #     v <- unname(v[,1])
-  #     return(v)
-  #   }
-  # 
-  #   var <- get.var(input$varMeasure, combined_data)
-  #   bb <- boxbreaks(var)
-  # 
-  #   bmap <- tm_shape(combined_data) +
-  #     tm_polygons() +
-  #     tm_shape(combined_data) +
-  #     tm_fill(input$varMeasure,title="Box Map",
-  #             breaks=bb,
-  #             palette="Blues",
-  #             labels = c("lower outlier",
-  #                        "< 25%",
-  #                        "25% - 50%",
-  #                        "50% - 75%",
-  #                        "> 75%",
-  #                        "upper outlier"))  +
-  #       tm_borders() +
-  #       tm_layout(main.title = "Box Plot",
-  #                 title.position = c("left",
-  #                                    "top"))
-  # 
-  #   tmap_leaflet(bmap, in.shiny=TRUE)
-  # })
-  # 
-  # output$eda2 <- renderPlot({
-  #   boxplot(combined_data_sp[[input$varMeasure]],
-  #           main = paste("Boxplot of", input$varMeasure),
-  #           ylab = input$varMeasure)
-  #   waiter_hide()
-  # })
 
-  # Common functions
-  get.var <- function(vname, df) {
-    v <- df[vname] %>%
-      st_set_geometry(NULL)
-    unname(v[,1])
-  }
-  
-  boxbreaks <- function(v, mult = 1.5) {
-    qv <- unname(quantile(v))
-    iqr <- qv[4] - qv[2]
-    upfence <- qv[4] + mult * iqr
-    lofence <- qv[2] - mult * iqr
-    bb <- numeric(7)
-    if (lofence < qv[1]) {
-      bb[1:2] <- c(lofence, floor(qv[1]))
-    } else {
-      bb[1:2] <- c(qv[1], lofence)
-    }
-    if (upfence > qv[5]) {
-      bb[6:7] <- c(ceiling(qv[5]), upfence)
-    } else {
-      bb[6:7] <- c(upfence, qv[5])
-    }
-    bb[3:5] <- qv[2:4]
-    bb
-  }
-  
   # EDA Function
   output$percentileMap <- renderLeaflet({
     waiter_show(html = spin_fading_circles())
+    get.var <- function(vname, df) {
+      v <- df[vname] %>%
+        st_set_geometry(NULL)
+      v <- unname(v[,1])
+      return(v)
+    }
+
+    percentile <- c(0, 0.01, 0.1, 0.5, 0.9, 0.99, 1)
+
     var <- get.var(input$varMeasure1, combined_data)
-    bperc <- quantile(var, c(0, 0.01, 0.1, 0.5, 0.9, 0.99, 1))
+    bperc <- quantile(var, percentile)
+
     pmap <- tm_shape(combined_data) +
       tm_polygons() +
       tm_shape(combined_data) +
       tm_fill(input$varMeasure1,
-              breaks = bperc,
-              palette = "Blues",
-              labels = c("< 1%", "1% - 10%", "10% - 50%", "50% - 90%", "90% - 99%", "> 99%")) +
+              breaks=bperc,
+              palette="Blues",
+              labels=c("< 1%", "1% - 10%", "10% - 50%", "50% - 90%", "90% - 99%", "> 99%")) +
       tm_borders() +
       tm_layout(main.title = "Percentile Map", title.position = c("right", "bottom"))
-    tmap_leaflet(pmap, in.shiny = TRUE)
+
+    tmap_leaflet(pmap, in.shiny=TRUE)
+
   })
-  
-  # output$eda1 <- renderPlot({
-  #   hist(combined_data_sp[[input$varMeasure1]],
-  #        main = paste("Histogram of", input$varMeasure1),
-  #        xlab = input$varMeasure1,
-  #        col = "grey",
-  #        breaks = input$bins)
-  #   waiter_hide()
-  # })
-  
+
+  output$eda1 <- renderPlot({
+    hist(combined_data_sp[[input$varMeasure1]],
+         main = paste("Histogram of", input$varMeasure1),
+         xlab = input$varMeasure1,
+         col = "grey",
+         breaks = input$bins)
+    waiter_hide()
+  })
+
   output$BoxMap <- renderLeaflet({
+    # waiter_show(html = spin_fading_circles())
+    boxbreaks <- function(v,mult=1.5) {
+      qv <- unname(quantile(v))
+      iqr <- qv[4] - qv[2]
+      upfence <- qv[4] + mult * iqr
+      lofence <- qv[2] - mult * iqr
+      bb <- vector(mode="numeric",length=7)
+      if (lofence < qv[1]) {
+        bb[1] <- lofence
+        bb[2] <- floor(qv[1])
+      } else {
+        bb[2] <- lofence
+        bb[1] <- qv[1]
+      }
+      if (upfence > qv[5]) {
+        bb[7] <- upfence
+        bb[6] <- ceiling(qv[5])
+      } else {
+        bb[6] <- upfence
+        bb[7] <- qv[5]
+      }
+      bb[3:5] <- qv[2:4]
+      return(bb)
+    }
+
+    get.var <- function(vname, df) {
+      v <- df[vname] %>%
+        st_set_geometry(NULL)
+      v <- unname(v[,1])
+      return(v)
+    }
+
     var <- get.var(input$varMeasure, combined_data)
     bb <- boxbreaks(var)
+
     bmap <- tm_shape(combined_data) +
       tm_polygons() +
       tm_shape(combined_data) +
-      tm_fill(input$varMeasure, title = "Box Map",
-              breaks = bb,
-              palette = "Blues",
-              labels = c("lower outlier", "< 25%", "25% - 50%", "50% - 75%", "> 75%", "upper outlier")) +
-      tm_borders() +
-      tm_layout(main.title = "Box Plot", title.position = c("left", "top"))
-    tmap_leaflet(bmap, in.shiny = TRUE)
-  })
-  
-  # output$eda2 <- renderPlot({
-  #   boxplot(combined_data_sp[[input$varMeasure]],
-  #           main = paste("Boxplot of", input$varMeasure),
-  #           ylab = input$varMeasure)
-  #   waiter_hide()
-  # })
-  
+      tm_fill(input$varMeasure,title="Box Map",
+              breaks=bb,
+              palette="Blues",
+              labels = c("lower outlier",
+                         "< 25%",
+                         "25% - 50%",
+                         "50% - 75%",
+                         "> 75%",
+                         "upper outlier"))  +
+        tm_borders() +
+        tm_layout(main.title = "Box Plot",
+                  title.position = c("left",
+                                     "top"))
 
+    tmap_leaflet(bmap, in.shiny=TRUE)
+  })
+
+  output$eda2 <- renderPlot({
+    boxplot(combined_data_sp[[input$varMeasure]],
+            main = paste("Boxplot of", input$varMeasure),
+            ylab = input$varMeasure)
+    waiter_hide()
+  })
 
 
 
@@ -568,6 +495,9 @@ server <- function(input, output, session){
     invalidateLater(1000)  # Adjust delay as needed
     waiter_hide()
   })
+  
+
+  
 
   #Clustering functions
   clusterset <- "global"
