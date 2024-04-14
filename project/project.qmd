@@ -1,5 +1,5 @@
 ---
-title: "Project Proposal: CrimeWatch"
+title: "Project: CrimeWatch Vietnam Law and Order Geosptial Analysis"
 format:
   html:
     code-fold: true
@@ -109,73 +109,58 @@ knitr::include_graphics("img/fig_1.jpg")
 
 -   Plotting up graphs for visualization and better understanding of the data
 
-    -   Histogram - identify the overall distribution of data value
+    -   Histogram - Visualize the distribution of data by bins each representing a range of data values
 
-    -   Box-plot - detect outliers
+    -   Percentile Map - A quantile map to visualize the distribution of data on a map
 
-    -   Choropleth Map - Visualize the distribution on a province-level
+    -   Box-plot - Visualize the distribution of data by graphically depicting groups of data through their quartiles
 
-## 7.3 Hierarchy Cluster Analysis - Jordan
+    -   Box Map - An augmented quantile map with an additional lower and upper category to visualize the distribution of the data on a map
 
--   Data Standardization (if necessary)
+## 7.3 Exploratory Spatial Data Analysis
 
--   Generate Cluster Dendrogram
+-   Visualize spatial data and examine the spatial distribution of data points
 
--   Gap Statistic Method
+    -   LISA - Identify spatial clusters or patterns of similarity and dissimilarity
 
--   Generate cluster heatmap
+## 7.4 Geographical Segmentation with Spatially Constrained Cluster Analysis
 
-## 7.4 Spatially Constrained Clustering: SKATER approach - Ebenezer
+-   Divide a target market by location to allow marketers to better serve customers in a particular area
 
--   Getting the Neighbor List
+    -   Hierarchy Cluster Analysis - Classify objects into clusters based on similarity or dissimilarity.
 
--   Compute minimum spanning tree
+    -   Spatially Constrained Clustering: SKATER approach - Uses spatial proximity to identify spatial patterns
 
--   Generate neighbors map
-
-## 7.5 Spatially Constrained Clustering: CLUSTGEO method - Aloysius
-
--   Generate Ward-like hierarchical clustering
-
--   Generate Choropleth Map
+    -   Spatially Constrained Clustering: CLUSTGEO method - Partition spatial data into cluster base on attribute similarity and spatial contiguity.
 
 # 8 Storyboard
 
-## 8.1 About Page
+## 8.1 EDA Page Histogram
 
 ```{r}
 #| echo: false
-knitr::include_graphics("img/about_page.jpg")
+knitr::include_graphics("img/histogram.jpg")
 ```
 
-## 8.2 EDA Page
+## 8.2 EDA Page Box Plot
 
 ```{r}
 #| echo: false
-knitr::include_graphics("img/eda_page.jpg")
+knitr::include_graphics("img/boxplot.jpg")
 ```
 
-## 8.3 Hierarchy Clustering Page
+## 8.3 ESDA
 
 ```{r}
 #| echo: false
-knitr::include_graphics("img/hierarchy_cluster.jpg")
+knitr::include_graphics("img/ESDA.jpg")
 ```
 
-## 8.4 Spatially Constrained Clustering: SKATER approach Page
+## 8.4 Clustering
 
 ```{r}
 #| echo: false
-knitr::include_graphics("img/skater_method.jpg")
-
-```
-
-## 8.5 Spatially Constrained Clustering: ClustGeo Method Page
-
-```{r}
-#| echo: false
-knitr::include_graphics("img/clustgeo_method.jpg")
-
+knitr::include_graphics("img/clustering.jpg")
 ```
 
 # 9 Application architecture

@@ -1,11 +1,6 @@
 pacman::p_load(shiny, shinythemes, tidyverse, leaflet, tmap, sf, sp, GWmodel, plotly, ClustGeo, 
                dendextend, GGally, ggdendro, corrplot, DT, shinyWidgets, RColorBrewer, spdep, waiter, bslib)
 
-# yellow_theme <- bs_theme(
-#   bg = "#fefee2", fg = "black", primary = "#FCC780",
-#   base_font = font_google("Space Mono"),
-#   code_font = font_google("Space Mono")
-# )
 
 
 
@@ -25,8 +20,7 @@ varMeasure1 <- c(
 
 
 ui <- fluidPage(
-  useWaiter(),
-  # theme=yellow_theme,
+  # useWaiter(),
   tags$head(
     tags$style(
       HTML("
@@ -46,18 +40,6 @@ ui <- fluidPage(
         .navbar {
           background-color: var(--navbar-color);
         }
-        <script>
-          var socket_timeout_interval
-          var n = 0
-          $(document).on('shiny:connected', function(event) {
-          socket_timeout_interval = setInterval(function(){
-          Shiny.onInputChange('count', n++)
-          }, 15000)
-          });
-          $(document).on('shiny:disconnected', function(event) {
-          clearInterval(socket_timeout_interval)
-          });
-          </script>
         
         "
       )
@@ -102,56 +84,56 @@ ui <- fluidPage(
 
 
 
-                           #EDA Panel
-                           tabPanel("EDA", value = "eda", fluid=TRUE, icon=icon("search"),
-                                    sidebarLayout(sidebarPanel(width=3, fluid=TRUE,
-                                                               conditionalPanel(
-                                                                 'input.EDAset === "Histogram"',
-                                                                 selectInput(inputId = "varMeasure1",
-                                                                               label = "Variables",
-                                                                               choices = varMeasure1,
-                                                                               selected = "security_ind",
-                                                                               multiple = FALSE,
-                                                                               width = "100%"),
-
-                                                                 sliderInput(inputId = "bins",
-                                                                             label = "Number of bins",
-                                                                             min = 1,
-                                                                             max = 10,
-                                                                             value = 5,
-                                                                             width = "100%")
-                                                                 ),
-
-                                                               conditionalPanel(
-                                                                 'input.EDAset === "Box Plot"',
-                                                                 selectInput(inputId = "varMeasure",
-                                                                               label = "Variables",
-                                                                               choices = varMeasure1,
-                                                                               selected = "security_ind",
-                                                                               multiple = FALSE,
-                                                                               width = "100%")
-                                                               )
-                                                               ),
-
-                                                               mainPanel(width=9, fluid=TRUE,
-                                                                         tabsetPanel(
-                                                                           id="EDAset",
-                                                                           tabPanel("Histogram",
-                                                                                    fluidRow(
-                                                                                      plotOutput(outputId="eda1"),
-                                                                                      leafletOutput("percentileMap")
-                                                                                             )
-                                                                                      ),
-                                                                           tabPanel("Box Plot",
-                                                                                    fluidRow(
-                                                                                      plotOutput(outputId="eda2"),
-                                                                                      leafletOutput(outputId="BoxMap")
-                                                                                    )
-                                                                           )
-                                                                         )
-                                                               )
-                                    )
-                           ),
+                           # #EDA Panel
+                           # tabPanel("EDA", value = "eda", fluid=TRUE, icon=icon("search"),
+                           #          sidebarLayout(sidebarPanel(width=3, fluid=TRUE,
+                           #                                     conditionalPanel(
+                           #                                       'input.EDAset === "Histogram"',
+                           #                                       selectInput(inputId = "varMeasure1",
+                           #                                                     label = "Variables",
+                           #                                                     choices = varMeasure1,
+                           #                                                     selected = "security_ind",
+                           #                                                     multiple = FALSE,
+                           #                                                     width = "100%"),
+                           # 
+                           #                                       sliderInput(inputId = "bins",
+                           #                                                   label = "Number of bins",
+                           #                                                   min = 1,
+                           #                                                   max = 10,
+                           #                                                   value = 5,
+                           #                                                   width = "100%")
+                           #                                       ),
+                           # 
+                           #                                     conditionalPanel(
+                           #                                       'input.EDAset === "Box Plot"',
+                           #                                       selectInput(inputId = "varMeasure",
+                           #                                                     label = "Variables",
+                           #                                                     choices = varMeasure1,
+                           #                                                     selected = "security_ind",
+                           #                                                     multiple = FALSE,
+                           #                                                     width = "100%")
+                           #                                     )
+                           #                                     ),
+                           # 
+                           #                                     mainPanel(width=9, fluid=TRUE,
+                           #                                               tabsetPanel(
+                           #                                                 id="EDAset",
+                           #                                                 tabPanel("Histogram",
+                           #                                                          fluidRow(
+                           #                                                            plotOutput(outputId="eda1"),
+                           #                                                            leafletOutput("percentileMap")
+                           #                                                                   )
+                           #                                                            ),
+                           #                                                 tabPanel("Box Plot",
+                           #                                                          fluidRow(
+                           #                                                            plotOutput(outputId="eda2"),
+                           #                                                            leafletOutput("BoxMap")
+                           #                                                          )
+                           #                                                 )
+                           #                                               )
+                           #                                     )
+                           #          )
+                           # ),
 
 
 
@@ -292,12 +274,19 @@ ui <- fluidPage(
                 
 
 server <- function(input, output, session){
-  rv = reactiveValues()
+  keep_alive <- shiny::reactiveTimer(intervalMs = 10000, session = shiny::getDefaultReactiveDomain())
   
-  output$keepAlive <- renderText({
-    req(input$count)
-    paste("keep alive ", input$count)
+  # Observer to trigger the reactive timer periodically
+  observe({
+    keep_alive()
   })
+
+  rv = reactiveValues()
+  # 
+  # output$keepAlive <- renderText({
+  #   req(input$count)
+  #   paste("keep alive ", input$count)
+  # })
   
   #Data Function
   output$data_table <- DT::renderDataTable({
@@ -306,112 +295,112 @@ server <- function(input, output, session){
     
   })
   
-  # EDA Function
-  output$percentileMap <- renderLeaflet({
-    waiter_show(html = spin_fading_circles())
-    get.var <- function(vname, df) {
-      v <- df[vname] %>%
-        st_set_geometry(NULL)
-      v <- unname(v[,1])
-      return(v)
-    }
-
-    percentile <- c(0, 0.01, 0.1, 0.5, 0.9, 0.99, 1)
-
-    var <- get.var(input$varMeasure1, combined_data)
-    bperc <- quantile(var, percentile)
-
-    pmap <- tm_shape(combined_data) +
-      tm_polygons() +
-      tm_shape(combined_data) +
-      tm_fill(input$varMeasure1,
-              breaks=bperc,
-              palette="Blues",
-              labels=c("< 1%", "1% - 10%", "10% - 50%", "50% - 90%", "90% - 99%", "> 99%")) +
-      tm_borders() +
-      tm_layout(main.title = "Percentile Map", title.position = c("right", "bottom"))
-
-    tmap_leaflet(pmap, in.shiny=TRUE)
-
-  })
-
-  output$eda1 <- renderPlot({
-    hist(combined_data_sp[[input$varMeasure1]],
-         main = paste("Histogram of", input$varMeasure1),
-         xlab = input$varMeasure1,
-         col = "grey",
-         breaks = input$bins)
-    waiter_hide()
-  })
-
-  output$BoxMap <- renderLeaflet({
-    waiter_show(html = spin_fading_circles())
-    boxbreaks <- function(v,mult=1.5) {
-      qv <- unname(quantile(v))
-      iqr <- qv[4] - qv[2]
-      upfence <- qv[4] + mult * iqr
-      lofence <- qv[2] - mult * iqr
-      bb <- vector(mode="numeric",length=7)
-      if (lofence < qv[1]) {
-        bb[1] <- lofence
-        bb[2] <- floor(qv[1])
-      } else {
-        bb[2] <- lofence
-        bb[1] <- qv[1]
-      }
-      if (upfence > qv[5]) {
-        bb[7] <- upfence
-        bb[6] <- ceiling(qv[5])
-      } else {
-        bb[6] <- upfence
-        bb[7] <- qv[5]
-      }
-      bb[3:5] <- qv[2:4]
-      return(bb)
-    }
-
-    get.var <- function(vname, df) {
-      v <- df[vname] %>%
-        st_set_geometry(NULL)
-      v <- unname(v[,1])
-      return(v)
-    }
-
-    var <- get.var(input$varMeasure, combined_data)
-    bb <- boxbreaks(var)
-
-    bmap <- tm_shape(combined_data) +
-      tm_polygons() +
-      tm_shape(combined_data) +
-      tm_fill(input$varMeasure,title="Box Map",
-              breaks=bb,
-              palette="Blues",
-              labels = c("lower outlier",
-                         "< 25%",
-                         "25% - 50%",
-                         "50% - 75%",
-                         "> 75%",
-                         "upper outlier"))  +
-        tm_borders() +
-        tm_layout(main.title = "Box Plot",
-                  title.position = c("left",
-                                     "top"))
-
-    tmap_leaflet(bmap, in.shiny=TRUE)
-  })
-
-  output$eda2 <- renderPlot({
-    boxplot(combined_data_sp[[input$varMeasure]],
-            main = paste("Boxplot of", input$varMeasure),
-            ylab = input$varMeasure)
-    waiter_hide()
-  })
-
-
+  # # EDA Function
+  # output$percentileMap <- renderLeaflet({
+  #   # waiter_show(html = spin_fading_circles())
+  #   get.var <- function(vname, df) {
+  #     v <- df[vname] %>%
+  #       st_set_geometry(NULL)
+  #     v <- unname(v[,1])
+  #     return(v)
+  #   }
+  # 
+  #   percentile <- c(0, 0.01, 0.1, 0.5, 0.9, 0.99, 1)
+  # 
+  #   var <- get.var(input$varMeasure1, combined_data)
+  #   bperc <- quantile(var, percentile)
+  # 
+  #   pmap <- tm_shape(combined_data) +
+  #     tm_polygons() +
+  #     tm_shape(combined_data) +
+  #     tm_fill(input$varMeasure1,
+  #             breaks=bperc,
+  #             palette="Blues",
+  #             labels=c("< 1%", "1% - 10%", "10% - 50%", "50% - 90%", "90% - 99%", "> 99%")) +
+  #     tm_borders() +
+  #     tm_layout(main.title = "Percentile Map", title.position = c("right", "bottom"))
+  # 
+  #   tmap_leaflet(pmap, in.shiny=TRUE)
+  # 
+  # })
+  # 
+  # output$eda1 <- renderPlot({
+  #   hist(combined_data_sp[[input$varMeasure1]],
+  #        main = paste("Histogram of", input$varMeasure1),
+  #        xlab = input$varMeasure1,
+  #        col = "grey",
+  #        breaks = input$bins)
+  #   # waiter_hide()
+  # })
+  # 
+  # output$BoxMap <- renderLeaflet({
+  #   # waiter_show(html = spin_fading_circles())
+  #   boxbreaks <- function(v,mult=1.5) {
+  #     qv <- unname(quantile(v))
+  #     iqr <- qv[4] - qv[2]
+  #     upfence <- qv[4] + mult * iqr
+  #     lofence <- qv[2] - mult * iqr
+  #     bb <- vector(mode="numeric",length=7)
+  #     if (lofence < qv[1]) {
+  #       bb[1] <- lofence
+  #       bb[2] <- floor(qv[1])
+  #     } else {
+  #       bb[2] <- lofence
+  #       bb[1] <- qv[1]
+  #     }
+  #     if (upfence > qv[5]) {
+  #       bb[7] <- upfence
+  #       bb[6] <- ceiling(qv[5])
+  #     } else {
+  #       bb[6] <- upfence
+  #       bb[7] <- qv[5]
+  #     }
+  #     bb[3:5] <- qv[2:4]
+  #     return(bb)
+  #   }
+  # 
+  #   get.var <- function(vname, df) {
+  #     v <- df[vname] %>%
+  #       st_set_geometry(NULL)
+  #     v <- unname(v[,1])
+  #     return(v)
+  #   }
+  # 
+  #   var <- get.var(input$varMeasure, combined_data)
+  #   bb <- boxbreaks(var)
+  # 
+  #   bmap <- tm_shape(combined_data) +
+  #     tm_polygons() +
+  #     tm_shape(combined_data) +
+  #     tm_fill(input$varMeasure,title="Box Map",
+  #             breaks=bb,
+  #             palette="Blues",
+  #             labels = c("lower outlier",
+  #                        "< 25%",
+  #                        "25% - 50%",
+  #                        "50% - 75%",
+  #                        "> 75%",
+  #                        "upper outlier"))  +
+  #       tm_borders() +
+  #       tm_layout(main.title = "Box Plot",
+  #                 title.position = c("left",
+  #                                    "top"))
+  # 
+  #   tmap_leaflet(bmap, in.shiny=TRUE)
+  # })
+  # 
+  # output$eda2 <- renderPlot({
+  #   boxplot(combined_data_sp[[input$varMeasure]],
+  #           main = paste("Boxplot of", input$varMeasure),
+  #           ylab = input$varMeasure)
+  #   # waiter_hide()
+  # })
 
 
 
-  # #ESDA functions
+
+
+  #ESDA functions
   legend <- c("insignificant","low-low", "low-high", "high-low", "high-high")
   colorsRd <- c("#ffffff","#fcae91","#fb6a4a","#de2d26","#a50f15")
   colorsBu <- c("#ffffff","#bdd7e7","#6baed6","#3182bd","#08519c")
@@ -421,7 +410,7 @@ server <- function(input, output, session){
   colorsNLi <- c("#fddbc7","#f4a582","#d6604d","#b2182b","#2166ac","#4393c3","#92c5de","#d1e5f0")
 
   output$lisa <- renderLeaflet({
-    waiter_show(html = spin_fading_circles())
+    # waiter_show(html = spin_fading_circles())
 
     indicator <- pull(combined_data_sp@data, input$inMeasure)
 
@@ -502,16 +491,16 @@ server <- function(input, output, session){
 
     tmap_leaflet(lisaPlot, in.shiny=TRUE)
   })
-  observe({
-    invalidateLater(1000)  # Adjust delay as needed
-    waiter_hide()
-  })
+  # observe({
+  #   invalidateLater(1000)  # Adjust delay as needed
+  #   waiter_hide()
+  # })
 
   #Clustering functions
   clusterset <- "global"
 
   output$ClusterMap <- renderLeaflet({
-    waiter_show(html = spin_fading_circles())
+    # waiter_show(html = spin_fading_circles())
 
     clusterset <<- combined_data_sp
 
@@ -780,7 +769,7 @@ server <- function(input, output, session){
                    diag = "l",
                    order="AOE",
                    tl.col = "black")
-    waiter_hide()
+    # waiter_hide()
   })
 }
 

@@ -5,7 +5,7 @@ account: jordanlew
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 11450023
-bundleId: 8489743
+bundleId: 8491581
 url: https://jordanlew.shinyapps.io/IS415-G2-CrimeWatch/
 version: 1
 asMultiple: FALSE
